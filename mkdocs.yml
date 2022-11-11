@@ -154,4 +154,14 @@ nav:
       - 触摸传感器: Python/tq_e1/touch.md
       - 超声波传感器: Python/tq_e1/ultrasonic.md
       - 声音传感器: Python/tq_e1/voice.md
-      - 水泵: Python/tqm/waterPump.md
+      - 水泵: Python/tq_e1/waterPump.md
+
+  - 小车:
+      - 避障传感器: Python/tq_car/avoid.md
+      - 蜂鸣器: Python/tq_car/buzzer.md
+      - 动作: Python/tq_car/car.md
+      - 颜色传感器: Python/tq_car/color.md
+      - 灯光: Python/tq_car/lamplight.md
+      - 马达: Python/tq_car/motor.md
+      - 巡线: Python/tq_car/trace.md
+      - 声音传感器: Python/tq_car/voice.md
