@@ -126,7 +126,7 @@ nav:
     - 计时器: Python/tqm/timer.md
     - 无线局域网: Python/tqm/wlan.md
 
-  - 集成功能板:
+  # - 集成功能板:
     - 蜂鸣器: Python/tq_s1/buzzer.md
     - 温湿度传感器: Python/tq_s1/DHT.md
     - 按键: Python/tq_s1/key.md
@@ -156,7 +156,7 @@ nav:
       - 声音传感器: Python/tq_e1/voice.md
       - 水泵: Python/tq_e1/waterPump.md
 
-  - 小车:
+  # - 小车:
       - 避障传感器: Python/tq_car/avoid.md
       - 蜂鸣器: Python/tq_car/buzzer.md
       - 动作: Python/tq_car/car.md
