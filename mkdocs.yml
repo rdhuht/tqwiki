@@ -114,19 +114,23 @@ nav:
     - index.md
   - Python: 
     - 天启主板tqm: 
-      - 点阵屏display: Python/tqm/00_display.md
-      - 三轴传感器accelerometer: Python/tqm/01_accelerometer.md
-      - 串口serial: Python/tqm/03_serial.md
-      # - 时间time:
-      # - 无线局域网wlan:
-      # - 无线局域网热点AP:
-      # - 物联网MQTT:
-      # - 数学math:
-    # - 天启集成功能板tqs1:
-    #   - 触摸传感器touch:
-    #   - 按键key:
-    #   - 光线传感器light:
-    #   - 声音传感器voice:
-    #   - 蜂鸣器music:
-    #   - 彩灯RGB:
-    #   - 温湿度传感器DHT:
+      - 加速度accelerometer: Python/tqm/accelerometer.md
+      - 无线网络接入点WirelessAccessPoint: Python/tqm/AP.md
+      - 点阵屏display: Python/tqm/display.md
+      - 物联网mqtt: Python/tqm/mqtt.md
+      - 串口serial: Python/tqm/serial.md
+      - 计时器timer: Python/tqm/timer.md
+      - 无线局域网WLAN: Python/tqm/wlan.md
+    - 时间time: Python/timer.md
+    - 数学math: Python/math.md
+    - 天启集成功能板tqs1:
+      - 蜂鸣器buzzer: Python/tq_s1/buzzer.md
+      - 温湿度传感器DHT: Python/tq_s1/DHT.md
+      - 按键key: Python/tq_s1/key.md
+      - 光线传感器light: Python/tq_s1/light.md
+      - 彩灯RGB: Python/tq_s1/RGB.md
+      - 触摸传感器touch: Python/tq_s1/touch.md
+      - 声音传感器voice: Python/tq_s1/voice.md
+
+
+
