@@ -110,27 +110,48 @@ extra:
   generator: false
 
 nav:
-  - 首页:
+  - 首页: 
     - index.md
-  - Python: 
-    - 天启主板tqm: 
-      - 加速度accelerometer: Python/tqm/accelerometer.md
-      - 无线网络接入点WirelessAccessPoint: Python/tqm/AP.md
-      - 点阵屏display: Python/tqm/display.md
-      - 物联网mqtt: Python/tqm/mqtt.md
-      - 串口serial: Python/tqm/serial.md
-      - 计时器timer: Python/tqm/timer.md
-      - 无线局域网WLAN: Python/tqm/wlan.md
-    - 时间time: Python/timer.md
-    - 数学math: Python/math.md
-    - 天启集成功能板tqs1:
-      - 蜂鸣器buzzer: Python/tq_s1/buzzer.md
-      - 温湿度传感器DHT: Python/tq_s1/DHT.md
-      - 按键key: Python/tq_s1/key.md
-      - 光线传感器light: Python/tq_s1/light.md
-      - 彩灯RGB: Python/tq_s1/RGB.md
-      - 触摸传感器touch: Python/tq_s1/touch.md
-      - 声音传感器voice: Python/tq_s1/voice.md
 
+  - 常用:
+    - 时间: Python/time.md
+    - 数学: Python/math.md
+    - 串口: Python/tqm/serial.md
 
+  - 主板: 
+    - 加速度: Python/tqm/accelerometer.md
+    - 无线网络接入点: Python/tqm/AP.md
+    - 点阵屏: Python/tqm/display.md
+    - 物联网: Python/tqm/mqtt.md
+    - 计时器: Python/tqm/timer.md
+    - 无线局域网: Python/tqm/wlan.md
 
+  - 集成功能板:
+    - 蜂鸣器: Python/tq_s1/buzzer.md
+    - 温湿度传感器: Python/tq_s1/DHT.md
+    - 按键: Python/tq_s1/key.md
+    - 光线传感器: Python/tq_s1/light.md
+    - 彩灯: Python/tq_s1/RGB.md
+    - 触摸传感器: Python/tq_s1/touch.md
+    - 声音传感器: Python/tq_s1/voice.md
+
+  - 转接板:
+      - 按钮: Python/tq_e1/button.md
+      - 蜂鸣器: Python/tq_e1/buzzer.md
+      - 颜色传感器: Python/tq_e1/colorSensor.md
+      - 四位数码管: Python/tq_e1/digitalTube.md
+      - 风扇: Python/tq_e1/fan.md
+      - 火焰传感器: Python/tq_e1/flameSensor.md
+      - 人体红外传感器: Python/tq_e1/humanInfrared.md
+      - 光线传感器: Python/tq_e1/light.md
+      - 灯串: Python/tq_e1/lightStrip.md
+      - 磁敏传感器: Python/tq_e1/magnetometer.md
+      - TT马达: Python/tq_e1/motor.md
+      - 全彩灯: Python/tq_e1/RGB.md
+      - 旋钮传感器: Python/tq_e1/rotarySwitch.md
+      - 舵机: Python/tq_e1/servo.md
+      - 土壤传感器: Python/tq_e1/soilHumidity.md
+      - 触摸传感器: Python/tq_e1/touch.md
+      - 超声波传感器: Python/tq_e1/ultrasonic.md
+      - 声音传感器: Python/tq_e1/voice.md
+      - 水泵: Python/tqm/waterPump.md
