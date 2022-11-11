@@ -113,7 +113,7 @@ nav:
   - 首页: 
     - index.md
 
-  - 常用:
+  - 通用:
     - 时间: Python/time.md
     - 数学: Python/math.md
     - 串口: Python/tqm/serial.md
