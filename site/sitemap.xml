@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    <url>
+         <loc>https://rdhuht.github.io/tianqiPythonAPI/</loc>
+         <lastmod>2022-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rdhuht.github.io/tianqiPythonAPI/Python/tqm/00_display/</loc>
+         <lastmod>2022-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rdhuht.github.io/tianqiPythonAPI/Python/tqm/01_accelerometer/</loc>
+         <lastmod>2022-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rdhuht.github.io/tianqiPythonAPI/Python/tqm/03_serial/</loc>
+         <lastmod>2022-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://rdhuht.github.io/tianqiPythonAPI/Python/tqs1/flow/</loc>
+         <lastmod>2022-11-11</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+</urlset>
