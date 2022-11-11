@@ -1,37 +1,18 @@
-name: tianqiPythonAPI
+name: Publish docs via GitHub Pages
 on:
   push:
     branches:
-      - master 
       - main
 jobs:
-  deploy:
+  build:
+    name: Deploy docs
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-python@v2
-        with:
-          python-version: 3.x
-      - run: pip install mkdocs-material 
-      - run: mkdocs gh-deploy --force
-name: Deploy to Github Pages
-  on:
-    push:
-      branches:
-        - main
-  jobs:
-    deploy:
-      runs-on: ubuntu-latest
-      steps:
-        - uses: actions/checkout@v2
-        - uses: actions/setup-python@v2
-        - name: MkDocs Action
-        - uses: Tiryoh/actions-mkdocs@v0.17.0
-          with:
-            python-version: 3.x
-        - uses: actions/cache@v2
-          with:
-            key: ${{ github.ref }}
-            path: .cache
-        - run: pip install mkdocs-material
-        - run: mkdocs gh-deploy --force
+      - name: Checkout main
+        uses: actions/checkout@v2
+      - name: Deploy docs
+        uses: mhausenblas/mkdocs-deploy-gh-pages@master
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CONFIG_FILE: mkdocs.yml
+          EXTRA_PACKAGES: build-base
