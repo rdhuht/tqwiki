@@ -6,7 +6,7 @@
 
 ## 函数
 
-### 内置图案
+### 按钮状态的检测
 
 #### button.is_pressed(port)
 
