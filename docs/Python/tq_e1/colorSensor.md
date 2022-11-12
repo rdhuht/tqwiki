@@ -1,10 +1,10 @@
 # 点阵屏
 ## 简介
-点阵屏控制天启主板的7x6 LED点阵屏。它可以用来展示字符串、图像甚至是动画。
+颜色传感器，获取颜色的相关数据。
 
 ## 函数
 ### 内置图案
-#### display.show(name)
+#### colorSensor.getColor(port)
 展示内置图案</br>
 参数：name，字符串</br>
 ``` py title="showBuiltinImg.py"
@@ -35,20 +35,3 @@ for img in images:
     “指向”、“电话”、“手机”、“保护伞”、“衬衫”、“裤”、</br>
     “面具”、“头骨”、“机器人”、“剑”、“右箭头”、“箭头”、“福”、</br>
     “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”
-
-
-### 自定义图案
-#### display.show(image)
-展示自定义图案</br>
-参数：image，字符串</br>
-``` py title="showMyImg.py"
-import tqm
-
-# 参数：1点亮，0熄灭；字符串和点阵的对应关系，从上往下，从左往右。
-image1 = "1000100,0000000,0010000,0000000,1000100,0000001" 
-display.show(image1)
-
-```
-
-### 滚动显示数据
-#### display.scroll(value)
