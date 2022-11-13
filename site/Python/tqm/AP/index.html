@@ -19,7 +19,7 @@
     
     
       
-        <title>无线网络接入点 - 天启PythonAPI</title>
+        <title>无线网络接入点 - PythonAPI</title>
       
     
     
@@ -112,6 +112,11 @@
     <label class="md-overlay" for="__drawer"></label>
     <div data-md-component="skip">
       
+        
+        <a href="#wifi" class="md-skip">
+          跳转至
+        </a>
+      
     </div>
     <div data-md-component="announce">
       
@@ -122,7 +127,7 @@
 
 <header class="md-header" data-md-component="header">
   <nav class="md-header__inner md-grid" aria-label="页眉">
-    <a href="../../.." title="天启PythonAPI" class="md-header__button md-logo" aria-label="天启PythonAPI" data-md-component="logo">
+    <a href="../../.." title="PythonAPI" class="md-header__button md-logo" aria-label="PythonAPI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
@@ -135,7 +140,7 @@
       <div class="md-header__ellipsis">
         <div class="md-header__topic">
           <span class="md-ellipsis">
-            天启PythonAPI
+            PythonAPI
           </span>
         </div>
         <div class="md-header__topic" data-md-component="header-topic">
@@ -295,13 +300,13 @@
 
 <nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
   <label class="md-nav__title" for="__drawer">
-    <a href="../../.." title="天启PythonAPI" class="md-nav__button md-logo" aria-label="天启PythonAPI" data-md-component="logo">
+    <a href="../../.." title="PythonAPI" class="md-nav__button md-logo" aria-label="PythonAPI" data-md-component="logo">
       
   
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
 
     </a>
-    天启PythonAPI
+    PythonAPI
   </label>
   
     <div class="md-nav__source">
@@ -558,10 +563,116 @@
       <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
       
       
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          无线网络接入点
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <a href="./" class="md-nav__link md-nav__link--active">
         无线网络接入点
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav" aria-label="函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    连接网络
+  </a>
+  
+    <nav class="md-nav" aria-label="连接网络">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wificonnectname-password" class="md-nav__link">
+    wifi.connect(name, password)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    判断连接状态
+  </a>
+  
+    <nav class="md-nav" aria-label="判断连接状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifiis_connected" class="md-nav__link">
+    wifi.is_connected()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    断开连接
+  </a>
+  
+    <nav class="md-nav" aria-label="断开连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifidisconnect" class="md-nav__link">
+    wifi.disconnect()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -955,6 +1066,96 @@
   
   
   
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    简介
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    函数
+  </a>
+  
+    <nav class="md-nav" aria-label="函数">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    连接网络
+  </a>
+  
+    <nav class="md-nav" aria-label="连接网络">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wificonnectname-password" class="md-nav__link">
+    wifi.connect(name, password)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    判断连接状态
+  </a>
+  
+    <nav class="md-nav" aria-label="判断连接状态">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifiis_connected" class="md-nav__link">
+    wifi.is_connected()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    断开连接
+  </a>
+  
+    <nav class="md-nav" aria-label="断开连接">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#wifidisconnect" class="md-nav__link">
+    wifi.disconnect()
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
   
 </nav>
                   </div>
@@ -969,16 +1170,52 @@
                   
 
 
-  <h1>无线网络接入点</h1>
+<h1 id="wifi">WiFi</h1>
+<h2 id="_1">简介</h2>
+<p>网络。</p>
+<h2 id="_2">函数</h2>
+<h3 id="_3">连接网络</h3>
+<h4 id="wificonnectname-password">wifi.connect(name, password)</h4>
+<p>连接网络。
+参数：</p>
+<p>name 字符串，热点名称。</p>
+<p>password 字符串，热点密码。</p>
+<p>返回值：无。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">wifi</span>
 
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
+<span class="n">wifi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">passoword</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_4">判断连接状态</h3>
+<h4 id="wifiis_connected">wifi.is_connected()</h4>
+<p>判断连接是否成功。</p>
+<p>参数：无。</p>
+<p>返回值：Bollean，布尔值。True连接成功，False连接失败。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">wifi</span>
 
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
+<span class="n">wifi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">passoword</span><span class="p">)</span>
+</code></pre></div>
+<h3 id="_5">断开连接</h3>
+<h4 id="wifidisconnect">wifi.disconnect()</h4>
+<p>断开连接。</p>
+<p>参数：无。</p>
+<p>返回值：无。</p>
+<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">wifi</span>
+
+<span class="n">name</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="n">password</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span> 
+<span class="n">wifi</span><span class="o">.</span><span class="n">connect</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">passoword</span><span class="p">)</span>
+</code></pre></div>
 
   <hr>
 <div class="md-source-file">
   <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 16:52:03</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 13, 2022 10:38:10</span>
       
         <br>
         创建日期:

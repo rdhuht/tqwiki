@@ -2,7 +2,7 @@
 
 ## 简介
 
-主板中的三轴传感器，Detect gestures and movement
+主板中的三轴传感器，检测姿态和运动。
 
 ## 函数
 
@@ -10,13 +10,22 @@
 
 #### accelerometer.get_state()
 
-计算sin值 
-参数：num 整数 秒数
+获取姿态。
+参数：无。
+返回值：String 字符串。
 
-返回值：。
+姿态有以下可能性“shake”"up""down""left""right""face up""face down"。
 
 ```py
-import tqm
+from tqm import accelerometer
+import time, serial
+
+
+while True:
+    time.sleep_ms(200)
+    s = accelerometer.get_state()
+    serial.write(s)
+
 ```
 
 ### 获取三轴强度
@@ -27,12 +36,17 @@ import tqm
 
 #### accelerometer.get_z()
 
-The accelerometer can read the strength of acceleration in 3 dimensions: x, y and z.
-
+读取三轴的强度。
 参数：无
-
 返回值：int 整数。
 
 ```py
-import tqm
+from tqm import accelerometer
+import time, serial
+
+
+while True:
+    time.sleep_ms(200)
+    x = accelerometer.get_x()
+    serial.write(x)
 ```

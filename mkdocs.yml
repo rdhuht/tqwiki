@@ -1,4 +1,4 @@
-site_name: 天启PythonAPI
+site_name: PythonAPI
 site_url: https://rdhuht.github.io/tianqiPythonAPI
 site_description: 展示天启IDE的图形化编程基础内容
 site_author: rdhuht cui
@@ -123,12 +123,9 @@ nav:
     - 点阵屏: Python/tqm/display.md
     - 加速度: Python/tqm/accelerometer.md
     - 计时器: Python/tqm/timer.md
-
     - 无线局域网: Python/tqm/wlan.md
     - 无线网络接入点: Python/tqm/AP.md
     - 物联网: Python/tqm/mqtt.md
-
-
   # - 集成功能板:
     # - 蜂鸣器: Python/tq_s1/buzzer.md
     # - 温湿度传感器: Python/tq_s1/DHT.md
@@ -145,7 +142,6 @@ nav:
       # - 火焰传感器: Python/tq_e1/flameSensor.md
       - 磁敏传感器: Python/tq_e1/magnetometer.md
       - 人体红外传感器: Python/tq_e1/humanInfrared.md
-
       # - 土壤传感器: Python/tq_e1/soilHumidity.md
       - 颜色传感器: Python/tq_e1/colorSensor.md
       - 声音传感器: Python/tq_e1/voice.md
@@ -155,12 +151,9 @@ nav:
 
     - 执行器: 
       - 蜂鸣器: Python/tq_e1/buzzer.md
-
       - 灯串: Python/tq_e1/lightStrip.md
       - 全彩灯: Python/tq_e1/RGB.md
-
       - 四位数码管: Python/tq_e1/digitalTube.md
-
       - 风扇: Python/tq_e1/fan.md
       - 舵机: Python/tq_e1/servo.md
       # - 水泵: Python/tq_e1/waterPump.md
