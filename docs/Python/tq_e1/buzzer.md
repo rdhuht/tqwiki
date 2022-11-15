@@ -1,0 +1,39 @@
+# 蜂鸣器
+
+## 简介
+
+蜂鸣器，根据输入的频率不同，产生不同的声音。可以用它做安全警报，也可以播放“蜂鸣器音乐”。
+工作原理是利用电磁感应现象，音频信号电流通过电磁线圈，使电磁线圈产生磁场，震动膜片在电磁线圈和磁铁的相互作用下，震动发声。
+
+<figure markdown> 
+    ![蜂鸣器](https://github.com/rdhuht/tianqiPythonAPI/blob/f7d1f329d5227ebe67161a767dfccfe82be11f14/docs/Python/tq_e1/buzzer.md#L9){ width="300" }
+    <figcaption>Image 说明</figcaption>
+</figure>
+
+## 函数
+
+### 播放内置音乐
+
+#### buzzer.play_music(port, num)
+
+播放内置音乐</br>
+参数：
+</br>`port`，整数 扩展板端口0, 1, 2, 3分别对应端口P0、P1、P2、P3；
+</br>`name`，整数 内置编号和音乐的对应关系如下表：
+
+|编号|歌曲名|
+|:---:|:---:|
+|   `1`    |生日快乐|
+|   `2`    |欢乐颂|
+|   `3`    |葫芦娃|
+|   `4`    |两只老虎|
+|   `5`    |警鸣声|
+
+返回值：无。
+
+```py
+import tqm
+import time
+
+
+```
