@@ -2,7 +2,7 @@
 
 ## 简介
 
-Measure time and add delays to programs
+时间模块。
 
 ## 函数
 
