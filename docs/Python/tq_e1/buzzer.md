@@ -7,7 +7,7 @@
 
 <figure markdown> 
     ![蜂鸣器](https://github.com/rdhuht/tianqiPythonAPI/blob/f7d1f329d5227ebe67161a767dfccfe82be11f14/docs/Python/tq_e1/buzzer.md#L9){ width="300" }
-    <figcaption>Image 说明</figcaption>
+    <figcaption>蜂鸣器</figcaption>
 </figure>
 
 ## 函数
