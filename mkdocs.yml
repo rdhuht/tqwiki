@@ -85,9 +85,9 @@ markdown_extensions:
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
-  # - pymdownx.emoji:
-  #     emoji_index: !!python/name:materialx.emoji.twemoji
-  #     emoji_generator: !!python/name:pymdownx.emoji.to_png
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
   - pymdownx.inlinehilite
   - pymdownx.magiclink
   - pymdownx.keys
@@ -116,7 +116,7 @@ nav:
   - 通用:
     - 串口: Python/tqm/serial.md
     - 时间: Python/time.md
-    - 数学: Python/math.md
+    # - 数学: Python/math.md
 
 
   - 主板:
@@ -137,25 +137,27 @@ nav:
 
   - 转接板:
     - 传感器: 
-      - 按钮: Python/tq_e1/button.md
-      - 触摸传感器: Python/tq_e1/touch.md
+      # - 按钮: Python/tq_e1/button.md
+      # - 触摸传感器: Python/tq_e1/touch.md
       # - 火焰传感器: Python/tq_e1/flameSensor.md
-      - 磁敏传感器: Python/tq_e1/magnetometer.md
+      # - 磁敏传感器: Python/tq_e1/magnetometer.md
       - 人体红外传感器: Python/tq_e1/humanInfrared.md
       # - 土壤传感器: Python/tq_e1/soilHumidity.md
-      - 颜色传感器: Python/tq_e1/colorSensor.md
-      - 声音传感器: Python/tq_e1/voice.md
+      # - 颜色传感器: Python/tq_e1/colorSensor.md
+      # - 声音传感器: Python/tq_e1/voice.md
       - 光线传感器: Python/tq_e1/light.md
-      - 旋钮传感器: Python/tq_e1/rotarySwitch.md
+      # - 旋钮传感器: Python/tq_e1/rotarySwitch.md
       - 超声波传感器: Python/tq_e1/ultrasonic.md
+      - 温湿度传感器: Python/tq_e1/DHT.md
+
 
     - 执行器: 
       - 蜂鸣器: Python/tq_e1/buzzer.md
-      - 灯串: Python/tq_e1/lightStrip.md
+      # - 灯串: Python/tq_e1/lightStrip.md
       - 全彩灯: Python/tq_e1/RGB.md
-      - 四位数码管: Python/tq_e1/digitalTube.md
-      - 风扇: Python/tq_e1/fan.md
-      - 舵机: Python/tq_e1/servo.md
+      # - 四位数码管: Python/tq_e1/digitalTube.md
+      # - 风扇: Python/tq_e1/fan.md
+      # - 舵机: Python/tq_e1/servo.md
       # - 水泵: Python/tq_e1/waterPump.md
       # - TT马达: Python/tq_e1/motor.md
 
