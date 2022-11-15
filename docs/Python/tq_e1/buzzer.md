@@ -6,13 +6,13 @@
 工作原理是利用电磁感应现象，音频信号电流通过电磁线圈，使电磁线圈产生磁场，震动膜片在电磁线圈和磁铁的相互作用下，震动发声。
 
 <figure markdown> 
-    ![蜂鸣器](https://raw.githubusercontent.com/rdhuht/blockly4tianqiPics/main/screenshots/buzzer.2m5xnz2q5aa0.png){ width="" }
+    ![蜂鸣器](https://gitee.com/rdhuhtCui/tianqi/raw/master/buzzer.png){ width="" }
     <figcaption>蜂鸣器</figcaption>
 </figure>
 
 ## 使用场景
 <figure markdown> 
-    ![打印机提示音](https://raw.githubusercontent.com/rdhuht/blockly4tianqiPics/main/screenshots/打印机.48hvkkimnwa0.jpg){ width="" }
+    ![打印机提示音](https://gitee.com/rdhuhtCui/tianqi/raw/master/%E6%89%93%E5%8D%B0%E6%9C%BA.jpg){ width="" }
     <figcaption>打印机提示音</figcaption>
 </figure>
 
