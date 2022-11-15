@@ -10,6 +10,12 @@
     <figcaption>蜂鸣器</figcaption>
 </figure>
 
+## 使用场景
+<figure markdown> 
+    ![打印机提示音](https://raw.githubusercontent.com/rdhuht/blockly4tianqiPics/main/screenshots/打印机.48hvkkimnwa0.jpg){ width="" }
+    <figcaption>打印机提示音</figcaption>
+</figure>
+
 ## 函数
 
 ### 播放内置音乐
