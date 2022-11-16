@@ -1,5 +1,5 @@
 site_name: PythonAPI
-site_url: https://rdhuht.github.io/tianqiPythonAPI
+site_url: https://rdhuht.github.io/tqwiki
 site_description: 展示天启IDE的图形化编程基础内容
 site_author: rdhuht cui
 repo_url: https://github.com/rdhuht/tianqiPythonAPI
@@ -30,10 +30,8 @@ theme:
     - content.tabs.link
     - content.tooltips
     - header.autohide
-    - navigation.expand
-    - navigation.indexes
+    # - navigation.expand
     - navigation.instant
-    # - navigation.prune
     # - navigation.sections
     - navigation.top
     - navigation.tracking
@@ -41,7 +39,6 @@ theme:
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
 
   icon:
     admonition:
@@ -59,6 +56,10 @@ theme:
       quote: octicons/quote-16
 
 markdown_extensions:
+  - toc:
+      permalink: ⚓︎
+      toc_depth: 4
+      
   - abbr
   - admonition
   - attr_list
@@ -67,12 +68,9 @@ markdown_extensions:
   - codehilite:
       guess_lang: true
       linenums: false
-  # - toc:
-  #     permalink: true
   - footnotes
   - meta
   - def_list
-
   # - pymdownx.highlight:
   #   anchor_linenums: true
   - pymdownx.snippets
@@ -98,6 +96,14 @@ markdown_extensions:
   - pymdownx.tilde
 
 plugins:
+  - glightbox
+  # - social:
+  #     # cards: !ENV [CARDS, false]
+  #     cards_color:
+  #       fill: "#0FF1CE" 
+  #       text: "#FFFFFF"
+  #     cards_font: Roboto
+
   - git-revision-date-localized:
       enable_creation_date: true
       type: datetime
@@ -109,6 +115,9 @@ extra:
   #     link: mailto:<email-address>
   generator: false
 
+# extra_css:
+#   - stylesheets/extra.css
+
 nav:
   - 首页: 
     - index.md
@@ -117,7 +126,6 @@ nav:
     - 串口: Python/tqm/serial.md
     - 时间: Python/time.md
     # - 数学: Python/math.md
-
 
   - 主板:
     - 点阵屏: Python/tqm/display.md
