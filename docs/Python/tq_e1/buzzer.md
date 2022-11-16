@@ -4,18 +4,11 @@
 
 蜂鸣器，根据输入的频率不同，产生不同的声音。可以用它做安全警报，也可以播放“蜂鸣器音乐”。
 工作原理是利用电磁感应现象，音频信号电流通过电磁线圈，使电磁线圈产生磁场，震动膜片在电磁线圈和磁铁的相互作用下，震动发声。
-
-<figure markdown> 
-    ![蜂鸣器](https://gitee.com/rdhuhtCui/tianqi/raw/master/buzzer.png){ width="" }
-    <figcaption>蜂鸣器</figcaption>
-</figure>
+![蜂鸣器](img/../../../img/buzzer.png)
 
 ## 使用场景
-<figure markdown> 
-    ![打印机提示音](https://gitee.com/rdhuhtCui/tianqi/raw/master/%E6%89%93%E5%8D%B0%E6%9C%BA.jpg){ width="" }
-    <figcaption>打印机提示音</figcaption>
-</figure>
-
+![打印机](img/../../../img/打印机.jpeg)
+![烟雾报警器](img/../../../img/烟雾报警.jpg)
 ## 函数
 
 ### 播放内置音乐
