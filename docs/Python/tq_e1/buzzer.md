@@ -13,15 +13,15 @@
 ## 使用场景
 
 <figure markdown>
-  ![打印机](../../../img/打印机.jpeg){ width="400" loading=lazy}
+  ![打印机](../../img/打印机.jpeg){ width="400" loading=lazy}
   <figcaption>打印机提示音</figcaption>
 </figure>
 <figure markdown>
-  ![烟雾报警](../../../img/烟雾报警.jpg){ width="400" loading=lazy}
+  ![烟雾报警](../../img/烟雾报警.jpg){ width="400" loading=lazy}
   <figcaption>烟雾报警声</figcaption>
 </figure>
 <figure markdown>
-  ![定时器](../../../img/定时器.jpg){ width="400" loading=lazy}
+  ![定时器](../../img/定时器.jpg){ width="400" loading=lazy}
   <figcaption>定时器</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@
 #### play_music(port, num)
 
 播放内置音乐<br>
-**参数**：<br>
+*参数*：<br>
 `port` 整数，端口。扩展板端口0, 1, 2, 3分别对应端口P0、P1、P2、P3<br>
 `num` 整数，编号。编号和音乐的对应关系如下表：
 
@@ -44,7 +44,7 @@
 | `4` | 两只老虎 |
 | `5` | 警鸣声  |
 
-**返回值**：无。
+*返回值*：无。
 
 ```py
 import tqm
@@ -59,7 +59,7 @@ buzzer.play_music(0, 1)
 
 控制蜂鸣器节拍
 
-**参数**：  
+*参数*：  
 `port` 整数，端口。扩展板端口0, 1, 2, 3分别对应端口P0、P1、P2、P3  
 `tone` 字符串，音调。音调对应关系如下表：
 
@@ -80,7 +80,7 @@ buzzer.play_music(0, 1)
 
 duration: 持续几个base（拍音调持续时间， base时间是1/4拍，125ms）
 
-**返回值**：无。
+*返回值*：无。
 
 ```py
 import tqm
@@ -93,18 +93,18 @@ buzzer.set_note(0, 3, 1)
 
 ## 参考资料
 <figure markdown>
-  ![大谱表与钢琴键盘对照表](../../../img/大谱表与钢琴键盘对照表.png){ width="400"}
+  ![大谱表与钢琴键盘对照表](../../img/大谱表与钢琴键盘对照表.png){ width="400"}
   <figcaption>大谱表与钢琴键盘对照表</figcaption>
 </figure>
 <figure markdown>
-  ![黑白键与唱名的对照图](../../../img/黑白键%20唱名%20对应关系.jpg){ width="400"}
+  ![黑白键与唱名的对照图](../../img/黑白键%20唱名%20对应关系.jpg){ width="400"}
   <figcaption>黑白键与唱名的对照图</figcaption>
 </figure>
 <figure markdown>
-  ![音调与频率对照表](../../../img/音调%20频率.png){ width="400"}
+  ![音调与频率对照表](../../img/音调%20频率.png){ width="400"}
   <figcaption>音调与频率对照表</figcaption>
 </figure>
 <figure markdown>
-  ![国际声学音高记法](../../../img/国际声学音高记法.png){ width="400"}
+  ![国际声学音高记法](../../img/国际声学音高记法.png){ width="400"}
   <figcaption>国际声学音高记法</figcaption>
 </figure>

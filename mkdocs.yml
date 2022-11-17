@@ -3,7 +3,7 @@ site_url: https://rdhuht.github.io/tqwiki
 site_description: 展示天启IDE的图形化编程基础内容
 site_author: rdhuht cui
 repo_url: https://github.com/rdhuht/tianqiPythonAPI
-repo_name: tianqiPythonAPI
+repo_name: tqwiki
 edit_uri: ""
 
 theme:
@@ -58,7 +58,7 @@ theme:
 markdown_extensions:
   - toc:
       permalink: ⚓︎
-      toc_depth: 4
+      toc_depth: 3
       
   - abbr
   - admonition

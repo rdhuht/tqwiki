@@ -79,7 +79,7 @@
 <svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
 </div>
 <div class="md-source__repository">
-    tianqiPythonAPI
+    tqwiki
   </div>
 </a>
 </div>
@@ -130,7 +130,7 @@
 <svg viewbox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><!--! Font Awesome Free 6.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2022 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"></path></svg>
 </div>
 <div class="md-source__repository">
-    tianqiPythonAPI
+    tqwiki
   </div>
 </a>
 </div>
@@ -311,23 +311,19 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
+    使用场景
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    控制全彩灯颜色
+<a class="md-nav__link" href="#_5">
+    控制颜色
   </a>
-<nav aria-label="控制全彩灯颜色" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rgbset_colorport-color-brightness">
-    RGB.set_color(port, color, brightness)
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -362,23 +358,19 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
+    使用场景
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_4">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
-    控制全彩灯颜色
+<a class="md-nav__link" href="#_5">
+    控制颜色
   </a>
-<nav aria-label="控制全彩灯颜色" class="md-nav">
-<ul class="md-nav__list">
-<li class="md-nav__item">
-<a class="md-nav__link" href="#rgbset_colorport-color-brightness">
-    RGB.set_color(port, color, brightness)
-  </a>
-</li>
-</ul>
-</nav>
 </li>
 </ul>
 </nav>
@@ -392,26 +384,41 @@
 <article class="md-content__inner md-typeset">
 <h1 id="_1">点阵屏<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
 <h2 id="_2">简介<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
-<p>全彩灯模块可以亮起不同颜色的灯光。
-采用WS2812，是一个集控制电路与发光电路于一体的智能外控LED光源。
+<p>全彩灯模块可以亮起不同颜色的灯光。<br/>
+采用WS2812，是一个集控制电路与发光电路于一体的智能外控LED光源。<br/>
 全彩灯模块可以实现多种颜色的显示。</p>
-<h2 id="_3">函数<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
-<h3 id="_4">控制全彩灯颜色<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<h4 id="rgbset_colorport-color-brightness">RGB.set_color(port, color, brightness)<a class="headerlink" href="#rgbset_colorport-color-brightness" title="Permanent link">⚓︎</a></h4>
-<p>设置全彩灯的颜色和亮度
-参数：
-port，整数 扩展板端口 P1---P5
-color，元组 (r, g, b) 每个颜色是整数，范围是0~255
-brightness，整数 亮度范围0~100</p>
-<p>返回值：无。</p>
+<h2 id="_3">使用场景<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E7%81%AF%E5%B8%A6.jpg"><img alt="灯带" loading="lazy" src="../../../img/%E7%81%AF%E5%B8%A6.jpg" width="400"/></a>
+</p>
+<figcaption>灯带</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E4%BA%A4%E9%80%9A%E7%81%AF.jpg"><img alt="交通灯" loading="lazy" src="../../../img/%E4%BA%A4%E9%80%9A%E7%81%AF.jpg" width="400"/></a>
+</p>
+<figcaption>交通灯</figcaption>
+</figure>
+<h2 id="_4">函数<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h2>
+<h3 id="_5">控制颜色<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
+<h4 id="rgbset_colorport-r-g-b-brightness">RGB.set_color(port, r, g, b, brightness)<a class="headerlink" href="#rgbset_colorport-r-g-b-brightness" title="Permanent link">⚓︎</a></h4>
+<p>设置全彩灯的颜色和亮度<br/>
+<em>参数</em>：<br/>
+<code>port</code>，整数，端口。扩展板端口1至5分别对应端口P1至P5<br/>
+<code>r</code>，整数，红色。范围是0~255<br/>
+<code>g</code>，整数，绿色。范围是0~255<br/>
+<code>b</code>，整数，蓝色。范围是0~255<br/>
+<code>brightness</code>，整数，亮度。亮度范围0~100</p>
+<p><em>返回值</em>：无。</p>
 <div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">tqm</span>
 <span class="kn">from</span> <span class="nn">tqe1</span> <span class="kn">import</span> <span class="n">RGB</span>
 
 <span class="n">port</span> <span class="o">=</span> <span class="mi">5</span>
-<span class="n">color</span> <span class="o">=</span> <span class="p">(</span><span class="mi">100</span><span class="p">,</span> <span class="mi">120</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+<span class="n">r</span><span class="o">=</span> <span class="mi">100</span>
+<span class="n">g</span> <span class="o">=</span> <span class="mi">120</span>
+<span class="n">b</span> <span class="o">=</span> <span class="mi">0</span>
 <span class="n">brightness</span> <span class="o">=</span> <span class="mi">90</span>
 
-<span class="n">RGB</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">color</span><span class="p">,</span> <span class="n">brightness</span><span class="p">)</span>
+<span class="n">RGB</span><span class="o">.</span><span class="n">set_color</span><span class="p">(</span><span class="n">port</span><span class="p">,</span> <span class="n">r</span><span class="p">,</span> <span class="n">g</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">brightness</span><span class="p">)</span>
 </code></pre></div>
 <hr/>
 <div class="md-source-file">
