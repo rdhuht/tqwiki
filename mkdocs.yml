@@ -1,6 +1,6 @@
-site_name: PythonAPI
+site_name: tqwiki
 site_url: https://rdhuht.github.io/tqwiki
-site_description: 展示天启IDE的图形化编程基础内容
+site_description: wiki
 site_author: rdhuht cui
 repo_url: https://github.com/rdhuht/tianqiPythonAPI
 repo_name: tqwiki
