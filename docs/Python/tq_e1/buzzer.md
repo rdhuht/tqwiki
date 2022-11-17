@@ -1,4 +1,4 @@
-# 蜂鸣器 autodeploy
+# 蜂鸣器 buzzer
 
 ## 简介
 
