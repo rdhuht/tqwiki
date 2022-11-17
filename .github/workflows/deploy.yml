@@ -20,21 +20,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
-
-      #安装mkdocs
-      - name: Install mkdocs
-        run: |
-          python -m pip install mkdocs
-          python -m pip install mkdocs-git-revision-date-localized-plugin, mkdocs-material-extensions, mkdocs-glightbox
-        
-      #生成html
-      - name: build html
-        run: mkdocs build
-
-      # 发布到指定目录
-      - name: Deploy
+      - uses: actions/setup-python@v2
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./site
+          python-version: 3.x
+      - run: python -m pip install mkdocs, mkdocs-material, mkdocs-git-revision-date-localized-plugin, mkdocs-material-extensions, mkdocs-glightbox
+      - run: mkdocs build
+      - run: mkdocs gh-deploy --force
+
