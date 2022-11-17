@@ -1,4 +1,4 @@
-# 光线传感器 light
+# 光线传感器 light_sensor
 
 ## 简介
 
