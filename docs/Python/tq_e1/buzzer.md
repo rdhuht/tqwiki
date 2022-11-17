@@ -1,4 +1,4 @@
-# 蜂鸣器 buzzer
+# 蜂鸣器 buzzer deploy auto test
 
 ## 简介
 
