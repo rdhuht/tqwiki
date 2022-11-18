@@ -33,7 +33,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#accelerometer">
           跳转至
         </a>
 </div>
@@ -213,23 +213,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
     简介
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#_3">
     姿态检测
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
+<a class="md-nav__link" href="#_4">
     获取三轴强度
   </a>
 </li>
@@ -352,23 +352,23 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
     简介
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#_3">
     姿态检测
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
+<a class="md-nav__link" href="#_4">
     获取三轴强度
   </a>
 </li>
@@ -382,12 +382,12 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">三轴传感器<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
-<h2 id="_2">简介<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h1 id="accelerometer">三轴传感器 accelerometer<a class="headerlink" href="#accelerometer" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>主板中的三轴传感器，检测姿态和运动。</p>
-<h2 id="_3">函数<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
-<h3 id="_4">姿态检测<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<h4 id="accelerometerget_state">accelerometer.get_state()<a class="headerlink" href="#accelerometerget_state" title="Permanent link">⚓︎</a></h4>
+<h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h3 id="_3">姿态检测<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h4 id="get_state">get_state()<a class="headerlink" href="#get_state" title="Permanent link">⚓︎</a></h4>
 <p>获取姿态。
 参数：无。
 返回值：String 字符串。</p>
@@ -401,10 +401,10 @@
     <span class="n">s</span> <span class="o">=</span> <span class="n">accelerometer</span><span class="o">.</span><span class="n">get_state</span><span class="p">()</span>
     <span class="n">serial</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">s</span><span class="p">)</span>
 </code></pre></div>
-<h3 id="_5">获取三轴强度<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
-<h4 id="accelerometerget_x">accelerometer.get_x()<a class="headerlink" href="#accelerometerget_x" title="Permanent link">⚓︎</a></h4>
-<h4 id="accelerometerget_y">accelerometer.get_y()<a class="headerlink" href="#accelerometerget_y" title="Permanent link">⚓︎</a></h4>
-<h4 id="accelerometerget_z">accelerometer.get_z()<a class="headerlink" href="#accelerometerget_z" title="Permanent link">⚓︎</a></h4>
+<h3 id="_4">获取三轴强度<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h4 id="get_x">get_x()<a class="headerlink" href="#get_x" title="Permanent link">⚓︎</a></h4>
+<h4 id="get_y">get_y()<a class="headerlink" href="#get_y" title="Permanent link">⚓︎</a></h4>
+<h4 id="get_z">get_z()<a class="headerlink" href="#get_z" title="Permanent link">⚓︎</a></h4>
 <p>读取三轴的强度。
 参数：无
 返回值：int 整数。</p>
@@ -422,10 +422,10 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:11:51</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:32:19</span>
 <br/>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:11:51</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
 </small>
 </div>
 </article>

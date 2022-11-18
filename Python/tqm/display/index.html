@@ -33,7 +33,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#_1">
+<a class="md-skip" href="#display">
           跳转至
         </a>
 </div>
@@ -208,28 +208,28 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
     简介
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#_3">
     内置图案
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
+<a class="md-nav__link" href="#_4">
     自定义图案
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
+<a class="md-nav__link" href="#_5">
     滚动显示数据
   </a>
 </li>
@@ -357,28 +357,28 @@
     </label>
 <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix="">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_2">
+<a class="md-nav__link" href="#_1">
     简介
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
+<a class="md-nav__link" href="#_2">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_4">
+<a class="md-nav__link" href="#_3">
     内置图案
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_5">
+<a class="md-nav__link" href="#_4">
     自定义图案
   </a>
 </li>
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_6">
+<a class="md-nav__link" href="#_5">
     滚动显示数据
   </a>
 </li>
@@ -392,12 +392,12 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="_1">点阵屏<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h1>
-<h2 id="_2">简介<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h1 id="display">点阵屏 display<a class="headerlink" href="#display" title="Permanent link">⚓︎</a></h1>
+<h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>点阵屏控制主板的点阵屏。它可以用来展示字符串、图像甚至是动画。</p>
-<h2 id="_3">函数<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
-<h3 id="_4">内置图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<h4 id="displayshowname">display.show(name)<a class="headerlink" href="#displayshowname" title="Permanent link">⚓︎</a></h4>
+<h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<h3 id="_3">内置图案<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h4 id="showname">show(name)<a class="headerlink" href="#showname" title="Permanent link">⚓︎</a></h4>
 <p>展示内置图案
 参数：name，字符串
 <div class="highlight"><span class="filename">showBuiltinImg.py</span><pre><span></span><code><span class="kn">import</span> <span class="nn">tqm</span>
@@ -406,11 +406,11 @@
 <span class="c1"># 48副内置图形</span>
 <span class="n">images</span> <span class="o">=</span> <span class="p">[</span>
     <span class="s2">"heart"</span><span class="p">,</span> <span class="s2">"hollow heart"</span><span class="p">,</span> <span class="s2">"happy"</span><span class="p">,</span> <span class="s2">"sad"</span><span class="p">,</span> <span class="s2">"ah"</span><span class="p">,</span> <span class="s2">"surprised"</span><span class="p">,</span> <span class="s2">"angry"</span><span class="p">,</span>
-    <span class="s2">"meh1"</span><span class="p">,</span> <span class="s2">"meh2"</span><span class="p">,</span> <span class="s2">"neutral"</span><span class="p">,</span> <span class="s2">"up"</span><span class="p">,</span> <span class="s2">"down"</span><span class="p">,</span> <span class="s2">"left"</span><span class="p">,</span> <span class="s2">"right"</span><span class="p">,</span> <span class="s2">"U-turn"</span><span class="p">,</span> 
-    <span class="s2">"yes"</span><span class="p">,</span> <span class="s2">"no"</span><span class="p">,</span> <span class="s2">"quarter note"</span><span class="p">,</span> <span class="s2">"quaver"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="s2">"rabbit"</span><span class="p">,</span> <span class="s2">"fox"</span><span class="p">,</span> 
-    <span class="s2">"snake"</span><span class="p">,</span> <span class="s2">"giraffe"</span><span class="p">,</span> <span class="s2">" dog"</span><span class="p">,</span> <span class="s2">"duck"</span><span class="p">,</span> <span class="s2">"turtle"</span><span class="p">,</span> <span class="s2">"muscle"</span><span class="p">,</span> <span class="s2">"hand"</span><span class="p">,</span> 
-    <span class="s2">"pointing"</span><span class="p">,</span> <span class="s2">"telephone"</span><span class="p">,</span> <span class="s2">"cellphone"</span><span class="p">,</span> <span class="s2">"umbrella"</span><span class="p">,</span> <span class="s2">"shirt"</span><span class="p">,</span> <span class="s2">"pant"</span><span class="p">,</span> 
-    <span class="s2">"mask"</span><span class="p">,</span> <span class="s2">"skull"</span><span class="p">,</span> <span class="s2">"robot"</span><span class="p">,</span> <span class="s2">"sword"</span><span class="p">,</span> <span class="s2">"right arrow"</span><span class="p">,</span> <span class="s2">"up arrow"</span><span class="p">,</span> <span class="s2">"fu"</span><span class="p">,</span> 
+    <span class="s2">"meh1"</span><span class="p">,</span> <span class="s2">"meh2"</span><span class="p">,</span> <span class="s2">"neutral"</span><span class="p">,</span> <span class="s2">"up"</span><span class="p">,</span> <span class="s2">"down"</span><span class="p">,</span> <span class="s2">"left"</span><span class="p">,</span> <span class="s2">"right"</span><span class="p">,</span> <span class="s2">"U-turn"</span><span class="p">,</span>
+    <span class="s2">"yes"</span><span class="p">,</span> <span class="s2">"no"</span><span class="p">,</span> <span class="s2">"quarter note"</span><span class="p">,</span> <span class="s2">"quaver"</span><span class="p">,</span> <span class="s2">"music"</span><span class="p">,</span> <span class="s2">"rabbit"</span><span class="p">,</span> <span class="s2">"fox"</span><span class="p">,</span>
+    <span class="s2">"snake"</span><span class="p">,</span> <span class="s2">"giraffe"</span><span class="p">,</span> <span class="s2">" dog"</span><span class="p">,</span> <span class="s2">"duck"</span><span class="p">,</span> <span class="s2">"turtle"</span><span class="p">,</span> <span class="s2">"muscle"</span><span class="p">,</span> <span class="s2">"hand"</span><span class="p">,</span>
+    <span class="s2">"pointing"</span><span class="p">,</span> <span class="s2">"telephone"</span><span class="p">,</span> <span class="s2">"cellphone"</span><span class="p">,</span> <span class="s2">"umbrella"</span><span class="p">,</span> <span class="s2">"shirt"</span><span class="p">,</span> <span class="s2">"pant"</span><span class="p">,</span>
+    <span class="s2">"mask"</span><span class="p">,</span> <span class="s2">"skull"</span><span class="p">,</span> <span class="s2">"robot"</span><span class="p">,</span> <span class="s2">"sword"</span><span class="p">,</span> <span class="s2">"right arrow"</span><span class="p">,</span> <span class="s2">"up arrow"</span><span class="p">,</span> <span class="s2">"fu"</span><span class="p">,</span>
     <span class="s2">"house"</span><span class="p">,</span> <span class="s2">"ok"</span><span class="p">,</span> <span class="s2">"pistol"</span><span class="p">,</span> <span class="s2">"tank"</span><span class="p">,</span> <span class="s2">"sand clock"</span><span class="p">,</span> <span class="s2">"trident"</span><span class="p">]</span> <span class="c1"># 内置图案点开查看 (1)</span>
 
 <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
@@ -427,27 +427,27 @@
     “面具”、“头骨”、“机器人”、“剑”、“右箭头”、“箭头”、“福”、
     “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”</li>
 </ol>
-<h3 id="_5">自定义图案<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
-<h4 id="displayshowimage">display.show(image)<a class="headerlink" href="#displayshowimage" title="Permanent link">⚓︎</a></h4>
+<h3 id="_4">自定义图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h4 id="showimage">show(image)<a class="headerlink" href="#showimage" title="Permanent link">⚓︎</a></h4>
 <p>展示自定义图案
 参数：image，字符串
 <div class="highlight"><span class="filename">showMyImg.py</span><pre><span></span><code><span class="kn">import</span> <span class="nn">tqm</span>
 
 <span class="c1"># 参数：1点亮，0熄灭；字符串和点阵的对应关系，从上往下，从左往右。</span>
-<span class="n">image1</span> <span class="o">=</span> <span class="s2">"1000100,0000000,0010000,0000000,1000100,0000001"</span> 
+<span class="n">image1</span> <span class="o">=</span> <span class="s2">"1000100,0000000,0010000,0000000,1000100,0000001"</span>
 <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">image1</span><span class="p">)</span>
 </code></pre></div></p>
-<h3 id="_6">滚动显示数据<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
+<h3 id="_5">滚动显示数据<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
 <h4 id="displayscrollvalue">display.scroll(value)<a class="headerlink" href="#displayscrollvalue" title="Permanent link">⚓︎</a></h4>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:11:51</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:32:19</span>
 <br/>
         创建日期:
-        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:11:51</span>
+        <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
 </small>
 </div>
 </article>
