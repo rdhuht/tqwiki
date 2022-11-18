@@ -8,7 +8,7 @@
 
 ### 连接网络
 
-#### wifi.connect(name, password)
+#### connect(name, password)
 
 连接网络。
 参数：
@@ -23,14 +23,14 @@ password 字符串，热点密码。
 from tqm import wifi
 
 name = ""
-password = "" 
+password = ""
 wifi.connect(name, passoword)
 
 ```
 
 ### 判断连接状态
 
-#### wifi.is_connected()
+#### is_connected()
 
 判断连接是否成功。
 
@@ -42,13 +42,13 @@ wifi.connect(name, passoword)
 from tqm import wifi
 
 name = ""
-password = "" 
+password = ""
 wifi.connect(name, passoword)
 ```
 
 ### 断开连接
 
-#### wifi.disconnect()
+#### disconnect()
 
 断开连接。
 
@@ -60,6 +60,6 @@ wifi.connect(name, passoword)
 from tqm import wifi
 
 name = ""
-password = "" 
+password = ""
 wifi.connect(name, passoword)
 ```

@@ -1,4 +1,4 @@
-# 串口
+# 串口 serial
 
 ## 简介
 
@@ -8,10 +8,10 @@ Communicate with a device using a serial interface
 
 ### 串口设置
 
-#### serial.set_baud_rate(value)
+#### set_baud_rate(value)
 
 设置波特率
-参数：num 整数 9600 或者115200 
+参数：num 整数 9600 或者115200
 
 返回值：无。
 
@@ -21,7 +21,7 @@ from tqm import serial
 
 ### 串口写入
 
-#### serial.write(value)
+#### write(value)
 
 Write a buffer to the bus..
 
