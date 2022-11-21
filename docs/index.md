@@ -9,4 +9,3 @@
     1. [python.org](https://realpython.com/)
     2. [RUNOOB.COM](https://www.runoob.com/python/python-tutorial.html)
     3. [RealPython](https://realpython.com/)
-

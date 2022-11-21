@@ -1,8 +1,4 @@
 *[HTML]: Hyper Text Markup Language
 *[W3C]: World Wide Web Consortium
 *[毫秒]: 1秒=1000毫秒，1s = 1000ms
-*[波特率]: Serial communication transmits data by sending one bit of a digital number (usually a byte sized number), at a time. So, the data bytes are sent as a series of their bits. Serial communication uses just one wire to send these bits so only one bit can travel across the wire at a time.
-
-When pins on your micro:bit are configured for serial communication, they make a serial port for data. The port switches the voltage on the pins to represent a new bit to send on the wire. A series of these voltage changes eventually sends a complete byte of data. The speed at which the voltage changes create a signal to communicate the bits is called the baud rate.
-
-You will typically use 9600 or 115200 for your baud rate. Sometimes the device you connect to can figure out what your baud rate is. Most of the time though, you need to make sure the device you connect to is set to match your baud rate.
+*[波特率]: 串行通信传输数据通过发送一个数字号码(通常是一个字节大小的数量)。所以,数据字节发送一系列的碎片。串行通信使用一线发送这些位所以只有一点可以穿越一次线。 　　 　　当对微针:配置串行通信,他们让一个串行端口的数据。端口交换机别针上的电压来表示一个新的位送线。一系列的这些电压变化最终发送一个完整的字节的数据。的速度创造一个交流信号的电压变化称为波特率。 　　 　　您通常会使用9600或115200波特率。有时你连接的设备可以算出你的波特率是什么。大部分的时间,你需要确保你连接的设备设置为匹配您的波特率。
