@@ -108,9 +108,10 @@ duration: 持续几个base（拍音调持续时间， base时间是1/4拍，125m
 
 *返回值*：无。
 
-```py title="playTones.py" linenums="1" hl_lines="10 15"
+```py title="playTones.py" linenums="1" hl_lines="2 5 6"
 import tqm
 from tqe1 import buzzer
+
 # 演奏钢琴的小字一组的所有键（从左往右），图片见“参考资料”的“大谱表与钢琴键盘对照表”
 buzzer.set_note(0, "C4", 1)
 buzzer.set_note(0, "C4#", 1)
@@ -127,7 +128,7 @@ buzzer.set_note(0, "B4", 1)
 
 ```
 
-```py title="playUmusic.py" linenums="1" hl_lines="10 15"
+```py title="twinkleStar.py" linenums="1" hl_lines="3 6 10 15"
 import tqm
 import time
 from tqe1 import buzzer
