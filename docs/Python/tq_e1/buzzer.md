@@ -31,7 +31,7 @@
 
 #### play_music(port, num)
 
-播放内置音乐<br>
+播放内置音乐。<br>
 *参数*：<br>
 `port` 整数，端口。扩展板端口0, 1, 2, 3分别对应端口P0、P1、P2、P3。<br>
 `num` 整数，编号。编号和音乐的对应关系如下表：
@@ -46,18 +46,20 @@
 
 *返回值*：无。
 
-```py
+```py title="buzzerMusic.py" linenums="1" hl_lines="2 6"
 import tqm
 from tqe1 import buzzer
 
-buzzer.play_music(0, 1)
+port = 0
+num = 1
+buzzer.play_music(port, num)
 ```
 
 ### 播放音符
 
 #### play_tone(port, tone, duration)
 
-控制蜂鸣器节拍
+控制蜂鸣器播放指定音调。
 
 *参数*：  
 `port` 整数，端口。扩展板端口0, 1, 2, 3分别对应端口P0、P1、P2、P3。  
@@ -82,13 +84,22 @@ duration: 持续几个base（拍音调持续时间， base时间是1/4拍，125m
 
 *返回值*：无。
 
-```py
+```py title="playUmusic.py" linenums="1" hl_lines="10 15"
 import tqm
+import time
 from tqe1 import buzzer
 
-buzzer.set_note(0, 1, 1)
-buzzer.set_note(0, 2, 1)
-buzzer.set_note(0, 3, 1)
+base = 125
+tune1 = [1, 1, 5, 5, 6, 6, 5]
+tune2 = [4, 4, 3, 3, 2, 2, 1]
+
+for tone in tune1:
+    buzzer.set_note(0, tone, 1)
+
+time.sleep_ms(base)
+
+for tone in tune2:
+    buzzer.set_note(0, tone, 1)
 ```
 
 ## 参考资料
