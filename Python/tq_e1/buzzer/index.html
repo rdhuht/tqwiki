@@ -750,6 +750,36 @@
 </table>
 <p>duration: 持续几个base（拍音调持续时间， base时间是¼拍，125ms）</p>
 <p><em>返回值</em>：无。</p>
+<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">playTones.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span>
+<span class="normal">11</span>
+<span class="normal">12</span>
+<span class="normal">13</span>
+<span class="normal">14</span>
+<span class="normal">15</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">import</span> <span class="nn">tqm</span>
+<span class="kn">from</span> <span class="nn">tqe1</span> <span class="kn">import</span> <span class="n">buzzer</span>
+
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"C4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"C4#"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"D4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"D4#"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"E4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"F4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="hll"><span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"F4#"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span><span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"G4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"G4#"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"A4#"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+<span class="hll"><span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="s2">"B4"</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">playUmusic.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
 <span class="normal"> 3</span>
@@ -769,8 +799,8 @@
 <span class="kn">from</span> <span class="nn">tqe1</span> <span class="kn">import</span> <span class="n">buzzer</span>
 
 <span class="n">base</span> <span class="o">=</span> <span class="mi">125</span>
-<span class="n">tune1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"C"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"A"</span><span class="p">,</span> <span class="s2">"G"</span><span class="p">]</span>
-<span class="n">tune2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"F"</span><span class="p">,</span> <span class="s2">"F"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"E"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"D"</span><span class="p">,</span> <span class="s2">"C"</span><span class="p">]</span>
+<span class="n">tune1</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"C4"</span><span class="p">,</span> <span class="s2">"C4"</span><span class="p">,</span> <span class="s2">"G4"</span><span class="p">,</span> <span class="s2">"G4"</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"A4"</span><span class="p">,</span> <span class="s2">"G4"</span><span class="p">]</span>
+<span class="n">tune2</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"F4"</span><span class="p">,</span> <span class="s2">"F4"</span><span class="p">,</span> <span class="s2">"E4"</span><span class="p">,</span> <span class="s2">"E4"</span><span class="p">,</span> <span class="s2">"D4"</span><span class="p">,</span> <span class="s2">"D4"</span><span class="p">,</span> <span class="s2">"C4"</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">t1</span> <span class="ow">in</span> <span class="n">tune1</span><span class="p">:</span>
 <span class="hll">    <span class="n">buzzer</span><span class="o">.</span><span class="n">set_note</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">t1</span><span class="p">,</span> <span class="mi">1</span><span class="p">)</span>
@@ -806,7 +836,7 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2022 18:00:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2022 18:11:22</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
