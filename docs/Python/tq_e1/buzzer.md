@@ -108,14 +108,33 @@ duration: 持续几个base（拍音调持续时间， base时间是1/4拍，125m
 
 *返回值*：无。
 
+```py title="playTones.py" linenums="1" hl_lines="10 15"
+import tqm
+from tqe1 import buzzer
+
+buzzer.set_note(0, "C4", 1)
+buzzer.set_note(0, "C4#", 1)
+buzzer.set_note(0, "D4", 1)
+buzzer.set_note(0, "D4#", 1)
+buzzer.set_note(0, "E4", 1)
+buzzer.set_note(0, "F4", 1)
+buzzer.set_note(0, "F4#", 1)
+buzzer.set_note(0, "G4", 1)
+buzzer.set_note(0, "G4#", 1)
+buzzer.set_note(0, "A4", 1)
+buzzer.set_note(0, "A4#", 1)
+buzzer.set_note(0, "B4", 1)
+
+```
+
 ```py title="playUmusic.py" linenums="1" hl_lines="10 15"
 import tqm
 import time
 from tqe1 import buzzer
 
 base = 125
-tune1 = ["C", "C", "G", "G", "A", "A", "G"]
-tune2 = ["F", "F", "E", "E", "D", "D", "C"]
+tune1 = ["C4", "C4", "G4", "G4", "A4", "A4", "G4"]
+tune2 = ["F4", "F4", "E4", "E4", "D4", "D4", "C4"]
 
 for t1 in tune1:
     buzzer.set_note(0, t1, 1)
