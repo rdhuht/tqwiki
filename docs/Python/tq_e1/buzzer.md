@@ -90,16 +90,16 @@ import time
 from tqe1 import buzzer
 
 base = 125
-tune1 = [1, 1, 5, 5, 6, 6, 5]
-tune2 = [4, 4, 3, 3, 2, 2, 1]
+tune1 = ["C", "C", "G", "G", "A", "A", "G"]
+tune2 = ["F", "F", "E", "E", "D", "D", "C"]
 
-for tone in tune1:
-    buzzer.set_note(0, tone, 1)
+for t1 in tune1:
+    buzzer.set_note(0, t1, 1)
 
 time.sleep_ms(base)
 
-for tone in tune2:
-    buzzer.set_note(0, tone, 1)
+for t2 in tune2:
+    buzzer.set_note(0, t2, 1)
 ```
 
 ## 参考资料
