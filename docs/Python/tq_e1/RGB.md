@@ -21,7 +21,7 @@
 
 ### 控制颜色
 
-#### RGB.set_color(port, r, g, b, brightness)
+#### set_color(port, r, g, b, brightness)
 
 设置全彩灯的颜色和亮度<br>
 *参数*：<br>
