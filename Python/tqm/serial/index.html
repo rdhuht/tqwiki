@@ -406,11 +406,14 @@
 <p><em>参数</em>：<br/>
 <code>value</code> int/float 整数/浮点数。要向串口写入的数值。</p>
 <p><em>返回值</em>：无。</p>
-<div class="highlight"><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">serial</span>
+<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">writenum.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">serial</span>
 
-<span class="n">serial</span><span class="o">.</span><span class="n">write_num</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
-<span class="n">serial</span><span class="o">.</span><span class="n">write_num</span><span class="p">(</span><span class="mf">3.1314</span><span class="p">)</span>
-</code></pre></div>
+<span class="hll"><span class="n">serial</span><span class="o">.</span><span class="n">write_num</span><span class="p">(</span><span class="mi">123</span><span class="p">)</span>
+</span><span class="hll"><span class="n">serial</span><span class="o">.</span><span class="n">write_num</span><span class="p">(</span><span class="mf">3.1314</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
 <p>When pins on your micro:bit are configured for serial communication, they make a serial port for data. The port switches the voltage on the pins to represent a new bit to send on the wire. A series of these voltage changes eventually sends a complete byte of data. The speed at which the voltage changes create a signal to communicate the bits is called the baud rate.</p>
 <p>You will typically use 9600 or 115200 for your baud rate. Sometimes the device you connect to can figure out what your baud rate is. Most of the time though, you need to make sure the device you connect to is set to match your baud rate.</p>
 <hr/>
@@ -418,7 +421,7 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2022 15:25:55</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2022 15:26:46</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
