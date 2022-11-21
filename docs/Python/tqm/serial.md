@@ -1,4 +1,4 @@
-# 串口
+# 串口 serial
 
 ## 简介
 
@@ -8,11 +8,10 @@
 
 ### 串口设置
 
-#### serial.set_baud_rate(value)
+#### set_baud_rate(value)
 
-设置串口的波特率。<br>
-*参数*<br>
-`value` 整数，波特率。可以选用的波特率是9600，115200（默认值）。
+设置波特率
+参数：num 整数 9600 或者115200 
 
 *返回值*：无。
 
@@ -26,7 +25,7 @@ serial.set_baud_rate(115200)  # 设置波特率(1)
 
 ### 串口写入
 
-#### serial.write_num(value)
+#### serial.write(value)
 
 向串行端口写入一个数字。
 

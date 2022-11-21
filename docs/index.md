@@ -1,5 +1,5 @@
 # 首页
-本文的展示天启教育开发板的Python文档。
+本网站目前主要展示天启教育开发板的Python文档。
 
 完整的天启教育开发板用户手册在这里 [天启教育开发板---用户使用手册](https://www.yuque.com/tianqi-xarhl/nkoqkd)。
 

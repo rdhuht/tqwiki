@@ -1,5 +1,4 @@
 # 点阵屏
-
 ## 简介
 
 点阵屏控制主板的点阵屏。它可以用来展示字符串、图像甚至是动画。
@@ -7,9 +6,7 @@
 ## 函数
 
 ### 内置图案
-
 #### display.show(name)
-
 展示内置图案</br>
 参数：name，字符串</br>
 
@@ -20,11 +17,11 @@ import time
 # 48副内置图形
 images = [
     "heart", "hollow heart", "happy", "sad", "ah", "surprised", "angry",
-    "meh1", "meh2", "neutral", "up", "down", "left", "right", "U-turn", 
-    "yes", "no", "quarter note", "quaver", "music", "rabbit", "fox", 
-    "snake", "giraffe", " dog", "duck", "turtle", "muscle", "hand", 
-    "pointing", "telephone", "cellphone", "umbrella", "shirt", "pant", 
-    "mask", "skull", "robot", "sword", "right arrow", "up arrow", "fu", 
+    "meh1", "meh2", "neutral", "up", "down", "left", "right", "U-turn",
+    "yes", "no", "quarter note", "quaver", "music", "rabbit", "fox",
+    "snake", "giraffe", " dog", "duck", "turtle", "muscle", "hand",
+    "pointing", "telephone", "cellphone", "umbrella", "shirt", "pant",
+    "mask", "skull", "robot", "sword", "right arrow", "up arrow", "fu",
     "house", "ok", "pistol", "tank", "sand clock", "trident"] # 内置图案点开查看 (1)
 
 for img in images:
@@ -42,9 +39,7 @@ for img in images:
    “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”
 
 ### 自定义图案
-
 #### display.show(image)
-
 展示自定义图案</br>
 参数：image，字符串</br>
 
@@ -52,7 +47,7 @@ for img in images:
 import tqm
 
 # 参数：1点亮，0熄灭；字符串和点阵的对应关系，从上往下，从左往右。
-image1 = "1000100,0000000,0010000,0000000,1000100,0000001" 
+image1 = "1000100,0000000,0010000,0000000,1000100,0000001"
 display.show(image1)
 ```
 

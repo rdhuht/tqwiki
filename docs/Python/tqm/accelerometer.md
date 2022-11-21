@@ -1,4 +1,4 @@
-# 三轴传感器
+# 三轴传感器 accelerometer
 
 ## 简介
 
@@ -8,7 +8,7 @@
 
 ### 姿态检测
 
-#### accelerometer.get_state()
+#### get_state()
 
 获取姿态。
 参数：无。
@@ -30,11 +30,11 @@ while True:
 
 ### 获取三轴强度
 
-#### accelerometer.get_x()
+#### get_x()
 
-#### accelerometer.get_y()
+#### get_y()
 
-#### accelerometer.get_z()
+#### get_z()
 
 读取三轴的强度。
 参数：无

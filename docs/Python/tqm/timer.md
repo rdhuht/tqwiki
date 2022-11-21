@@ -1,4 +1,4 @@
-# 计时器
+# 计时器 timer
 
 ## 简介
 
@@ -8,7 +8,7 @@
 
 ### 重置计时器
 
-#### timer.reset()
+#### reset()
 
 设置波特率
 参数：无。
@@ -21,7 +21,7 @@ from tqm import timer
 
 ### 获取运行时间
 
-#### timer.running_time()
+#### running_time()
 
 获取计时器计时秒数
 
