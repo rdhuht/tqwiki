@@ -33,7 +33,7 @@
 <input autocomplete="off" class="md-toggle" data-md-toggle="search" id="__search" type="checkbox"/>
 <label class="md-overlay" for="__drawer"></label>
 <div data-md-component="skip">
-<a class="md-skip" href="#ultra">
+<a class="md-skip" href="#ultrasonic">
           跳转至
         </a>
 </div>
@@ -281,13 +281,18 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
+    使用场景
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    按钮状态的检测
+<a class="md-nav__link" href="#_4">
+    检测距离
   </a>
 </li>
 </ul>
@@ -353,13 +358,18 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_2">
+    使用场景
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_3">
     函数
   </a>
 <nav aria-label="函数" class="md-nav">
 <ul class="md-nav__list">
 <li class="md-nav__item">
-<a class="md-nav__link" href="#_3">
-    按钮状态的检测
+<a class="md-nav__link" href="#_4">
+    检测距离
   </a>
 </li>
 </ul>
@@ -372,24 +382,73 @@
 </div>
 <div class="md-content" data-md-component="content">
 <article class="md-content__inner md-typeset">
-<h1 id="ultra">超声波传感器 ultra<a class="headerlink" href="#ultra" title="Permanent link">⚓︎</a></h1>
+<h1 id="ultrasonic">超声波传感器 ultrasonic<a class="headerlink" href="#ultrasonic" title="Permanent link">⚓︎</a></h1>
 <h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
-<p>按钮功能 ……</p>
-<h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
-<h3 id="_3">按钮状态的检测<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
-<h4 id="buttonis_pressedport">button.is_pressed(port)<a class="headerlink" href="#buttonis_pressedport" title="Permanent link">⚓︎</a></h4>
-<p>判断按钮传感器是否被按下
-参数：port，整数 扩展板端口 P1---P5</p>
-<p>返回值：boolean，布尔值。True按下，False未按下。</p>
-<div class="highlight"><pre><span></span><code><span class="kn">import</span> <span class="nn">tqm</span>
+<p>超声波传感器，用于检测距离。</p>
+<details class="note">
+<summary>超声波测距的原理</summary>
+<p>该传感器有2个“眼睛”（探头），一个用于发送超声波，一个用于接收返回的超声波。<br/>
+距离 = 时间间隔 × 声速 ÷ 2 （声速默认值 每秒340米）<br/></p>
+</details>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E8%B6%85%E5%A3%B0%E6%B3%A2%E5%8E%9F%E7%90%86.png"><img alt="超声波原理" loading="lazy" src="../../../img/%E8%B6%85%E5%A3%B0%E6%B3%A2%E5%8E%9F%E7%90%86.png" width="400"/></a>
+</p>
+<figcaption>超声波测距的原理</figcaption>
+</figure>
+<h2 id="_2">使用场景<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E9%B1%BC%E7%BE%A4%E6%8E%A2%E6%B5%8B%E5%99%A8.jpg"><img alt="鱼群探测器" loading="lazy" src="../../../img/%E9%B1%BC%E7%BE%A4%E6%8E%A2%E6%B5%8B%E5%99%A8.jpg" width="400"/></a>
+</p>
+<figcaption>鱼群探测器</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E5%80%92%E8%BD%A6%E9%9B%B7%E8%BE%BE.jpg"><img alt="倒车雷达" loading="lazy" src="../../../img/%E5%80%92%E8%BD%A6%E9%9B%B7%E8%BE%BE.jpg" width="400"/></a>
+</p>
+<figcaption>倒车雷达</figcaption>
+</figure>
+<figure>
+<p><a class="glightbox" data-desc-position="bottom" data-description="" data-height="auto" data-title="" data-width="100%" href="../../../img/%E6%BD%9C%E6%B0%B4%E8%89%87%E7%9A%84%E9%9B%B7%E8%BE%BE.png"><img alt="潜水艇的雷达" loading="lazy" src="../../../img/%E6%BD%9C%E6%B0%B4%E8%89%87%E7%9A%84%E9%9B%B7%E8%BE%BE.png" width="400"/></a>
+</p>
+<figcaption>潜水艇的雷达</figcaption>
+</figure>
+<h2 id="_3">函数<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h2>
+<h3 id="_4">检测距离<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h4 id="get_distanceport">get_distance(port)<a class="headerlink" href="#get_distanceport" title="Permanent link">⚓︎</a></h4>
+<p>检测距离。<br/>
+<em>参数</em>：<br/>
+<code>port</code>，整数，端口。扩展板端口0到3分别对应端口P0到P3。</p>
+<p><em>返回值</em>：<br/>
+<code>distance</code>，整数。</p>
+<div class="admonition warning">
+<p class="admonition-title">注意</p>
+<p>可测量距离范围：2~400cm，2cm内为盲区。</p>
+</div>
+<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">ultrasonicDistance.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
+<span class="normal"> 2</span>
+<span class="normal"> 3</span>
+<span class="normal"> 4</span>
+<span class="normal"> 5</span>
+<span class="normal"> 6</span>
+<span class="normal"> 7</span>
+<span class="normal"> 8</span>
+<span class="normal"> 9</span>
+<span class="normal">10</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">serial</span>
 <span class="kn">import</span> <span class="nn">time</span>
-</code></pre></div>
+<span class="hll"><span class="kn">from</span> <span class="nn">tqe1</span> <span class="kn">import</span> <span class="n">ultrasonic</span>
+</span>
+<span class="n">port</span> <span class="o">=</span> <span class="mi">3</span>
+
+<span class="k">while</span> <span class="kc">True</span><span class="p">:</span>
+    <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">200</span><span class="p">)</span>
+<span class="hll">    <span class="n">d</span> <span class="o">=</span> <span class="n">ultrasonic</span><span class="o">.</span><span class="n">get_distance</span><span class="p">(</span><span class="n">port</span><span class="p">)</span>
+</span>    <span class="n">serial</span><span class="o">.</span><span class="n">write_num</span><span class="p">(</span><span class="n">d</span><span class="p">)</span>
+</code></pre></div></td></tr></table></div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 18, 2022 13:32:19</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 21, 2022 17:21:34</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
