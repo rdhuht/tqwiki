@@ -111,7 +111,7 @@ duration: 持续几个base（拍音调持续时间， base时间是1/4拍，125m
 ```py title="playTones.py" linenums="1" hl_lines="10 15"
 import tqm
 from tqe1 import buzzer
-
+# 演奏钢琴的小字一组的所有键（从左往右），图片见“参考资料”的“大谱表与钢琴键盘对照表”
 buzzer.set_note(0, "C4", 1)
 buzzer.set_note(0, "C4#", 1)
 buzzer.set_note(0, "D4", 1)
