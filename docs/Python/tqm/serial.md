@@ -39,5 +39,5 @@ serial.set_baud_rate(115200)  # 设置波特率(1)
 from tqm import serial
 
 serial.write_num(123)
-serial.write_num(3.1314)
+serial.write_num(3.1415926)
 ```
