@@ -2,7 +2,7 @@
 
 ## 简介
 
-Communicate with a device using a serial interface
+使用串行接口与设备通信。
 
 ## 函数
 
@@ -10,29 +10,34 @@ Communicate with a device using a serial interface
 
 #### serial.set_baud_rate(value)
 
-设置波特率
-参数：num 整数 9600 或者115200 
+设置串口的波特率。<br>
+*参数*<br>
+`value` 整数，波特率。可以选用的波特率是9600，115200（默认值）。
 
-返回值：无。
+*返回值*：无。
 
-```py
+```py title="serialbaudrate.py" linenums="1" hl_lines="3"
 from tqm import serial
+
+serial.set_baud_rate(115200)  # 设置波特率(1)
 ```
+
+1. 默认的波特率是115200，如过没有特殊情况，可以不使用此函数
 
 ### 串口写入
 
-#### serial.write(value)
+#### serial.write_num(value)
 
-Write a buffer to the bus..
+向串行端口写入一个数字。
 
-参数：value  A bytes object or a string.
+*参数*：<br>
+`value` int/float 整数/浮点数。要向串口写入的数值。
 
-返回值：The number of bytes written, or `None` on timeout。
+*返回值*：无。
 
 ```py
 from tqm import serial
 
-serial.write('hello world')
-serial.write(b'hello world')
-serial.write(bytes([1, 2, 3]))
+serial.write_num(123)
+serial.write_num(3.1314)
 ```

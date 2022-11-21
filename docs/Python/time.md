@@ -2,34 +2,32 @@
 
 ## 简介
 
-时间模块。
-
+测量时间并给程序添加延迟。
 ## 函数
 
 ### 延时
 
 #### time.sleep(s)
 
-延时  
-参数：s（seconds）整数 秒数
+延迟几秒钟。<br>
+*参数*：<br>
+`s` 整数，延迟的秒数，second(s)秒。<br>
+*返回值*：无。
 
-返回值：无。
-
-```py
+```py title="delays.py" linenums="1" hl_lines="2"
 import tqm
 import time
 ```
 
-### 延时
-
 #### time.sleep_ms(ms)
 
-延时  
-参数：ms（million seconds）整数 毫秒数 1秒=1000毫秒
+延迟给定的毫秒数。<br>
+*参数*：<br>
+`ms` 整数，延迟的毫秒数，million second(s)毫秒。<br>
 
-返回值：无。
+*返回值*：无。
 
-```py
+```py title="delayms.py" linenums="1" hl_lines="2"
 import tqm
 import time
 ```

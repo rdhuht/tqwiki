@@ -25,15 +25,16 @@
 
 设置全彩灯的颜色和亮度<br>
 *参数*：<br>
-`port`，整数，端口。扩展板端口1至5分别对应端口P1至P5<br>
-`r`，整数，红色。范围是0~255<br>
-`g`，整数，绿色。范围是0~255<br>
-`b`，整数，蓝色。范围是0~255<br>
-`brightness`，整数，亮度。亮度范围0~100
+`port`，整数，端口。扩展板端口1至5分别对应端口P1至P5。<br>
+`r`，整数，红色。范围是0~255。<br>
+`g`，整数，绿色。范围是0~255。<br>
+`b`，整数，蓝色。范围是0~255。<br>
+`brightness`，整数，亮度。亮度范围0~100。
 
 *返回值*：无。
 
-```py
+```py title="rgbLed.py" linenums="1" hl_lines="2 10"
+
 import tqm
 from tqe1 import RGB
 
@@ -46,3 +47,4 @@ brightness = 90
 RGB.set_color(port, r, g, b, brightness)
 
 ```
+
