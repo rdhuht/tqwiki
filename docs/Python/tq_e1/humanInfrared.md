@@ -1,4 +1,4 @@
-# 人体红外传感器 humanInfrared
+# 人体红外传感器 humanInfrared （开发中……）
 
 ## 简介
 
