@@ -33,12 +33,12 @@
 `port`，整数，端口。扩展板端口2到5分别对应端口P2到P5。</br>
 
 *返回值*：<br>
-`light_intensity`，整数。返回值的范围时0~1023。
+`light_intensity`，整数。返回值的范围是0~1023。
 
 !!! warning "注意"
     光传感器值仅反映光强的近似趋势，并不代表确切的流明。
 
-```py title="ultrasonicDistance.py" linenums="1" hl_lines="3 9"
+```py title="light.py" linenums="1" hl_lines="3 9"
 from tqm import serial
 import time
 from tqe1 import light
