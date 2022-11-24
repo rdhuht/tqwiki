@@ -155,12 +155,12 @@ nav:
       # - 触摸传感器: Python/tq_e1/touch.md
       # - 火焰传感器: Python/tq_e1/flameSensor.md
       # - 磁敏传感器: Python/tq_e1/magnetometer.md
-      - 人体红外传感器: Python/tq_e1/humanInfrared.md
+      - 人体红外传感器: Python/tq_e1/PIR.md
       # - 土壤传感器: Python/tq_e1/soilHumidity.md
       # - 颜色传感器: Python/tq_e1/colorSensor.md
       # - 声音传感器: Python/tq_e1/voice.md
       - 光线传感器: Python/tq_e1/light.md
-      # - 旋钮传感器: Python/tq_e1/rotarySwitch.md
+      - 旋钮传感器: Python/tq_e1/rotarySwitch.md
       - 超声波传感器: Python/tq_e1/ultrasonic.md
       - 温湿度传感器: Python/tq_e1/DHT.md
 
