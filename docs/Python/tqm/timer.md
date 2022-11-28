@@ -10,14 +10,9 @@
 
 #### reset()
 
-设置波特率
-参数：无。
-
-返回值：无。
-
-```py
-from tqm import timer
-```
+计时器归零，重新计时。<br>
+*参数*：无。
+*返回值*：无。
 
 ### 获取运行时间
 
@@ -25,17 +20,22 @@ from tqm import timer
 
 获取计时器计时秒数
 
-参数：无。
+*参数*：无。
 
-返回值：ms 毫秒数值。
+*返回值*：second(s), 整数。运行时间多少秒，秒数值。
 
-```py
+```py title="timer.py" linenums="1" hl_lines="4 6"
 from tqm import timer, serial
 import time
 
 timer.reset()
 time.sleep(1)
 rt = timer.running_time()
-serial.write(rt)
+serial.write_num(rt)
+time.reset(1)
+time.sleep(3)
+rt2 = timer.running_time()
+serial.write_num(rt2)
+
 
 ```
