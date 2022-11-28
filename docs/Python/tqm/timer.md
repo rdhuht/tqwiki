@@ -2,7 +2,7 @@
 
 ## 简介
 
-主板内的计时器。
+主板内置的计时器。
 
 ## 函数
 
@@ -10,7 +10,7 @@
 
 #### reset()
 
-计时器归零，重新计时。<br>
+计时器归零。<br>
 
 *参数*：无。<br>
 
@@ -20,24 +20,22 @@
 
 #### running_time()
 
-获取计时器计时秒数<br>
+获取运行秒数（主板通电后、重启后或调用reset函数后）<br>
 
 *参数*：无。<br>
 
 *返回值*：second(s), 整数。运行时间多少秒，秒数值。<br>
 
-```py title="timer.py" linenums="1" hl_lines="4 6"
+```py title="timer.py" linenums="1" hl_lines="5 7 9"
 from tqm import timer, serial
 import time
 
-timer.reset()
 time.sleep(1)
 rt = timer.running_time()
 serial.write_num(rt)
-time.reset(1)
+time.reset()
 time.sleep(3)
 rt2 = timer.running_time()
 serial.write_num(rt2)
-
 
 ```
