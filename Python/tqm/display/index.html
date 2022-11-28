@@ -223,12 +223,12 @@
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
-    内置图案 （开发中……）
+    内置图案
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    自定义图案 （开发中……）
+    自定义图案
   </a>
 </li>
 <li class="md-nav__item">
@@ -239,6 +239,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
     调整亮度
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    熄灭屏幕
   </a>
 </li>
 </ul>
@@ -382,12 +387,12 @@
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
-    内置图案 （开发中……）
+    内置图案
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    自定义图案 （开发中……）
+    自定义图案
   </a>
 </li>
 <li class="md-nav__item">
@@ -398,6 +403,11 @@
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
     调整亮度
+  </a>
+</li>
+<li class="md-nav__item">
+<a class="md-nav__link" href="#_7">
+    熄灭屏幕
   </a>
 </li>
 </ul>
@@ -412,12 +422,12 @@
 <article class="md-content__inner md-typeset">
 <h1 id="display">点阵屏 display<a class="headerlink" href="#display" title="Permanent link">⚓︎</a></h1>
 <h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
-<p>控制主板的点阵屏。它可以用来展示字符串、图像甚至是动画。</p>
+<p>控制主板的点阵屏。它可以用来显示字符串、图像甚至是动画。</p>
 <h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
-<h3 id="_3">内置图案 （开发中……）<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
-<h4 id="displayshowname">display.show(name)<a class="headerlink" href="#displayshowname" title="Permanent link">⚓︎</a></h4>
-<p>展示内置图案。<br/>
-<em>参数</em>：<code>name</code>，字符串<br/>
+<h3 id="_3">内置图案<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h4 id="show_iconname">show_icon(name)<a class="headerlink" href="#show_iconname" title="Permanent link">⚓︎</a></h4>
+<p>显示内置图案。<br/>
+<em>参数</em>：<code>name</code>，字符串。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">showImage.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -448,7 +458,7 @@
     <span class="s2">"house"</span><span class="p">,</span> <span class="s2">"ok"</span><span class="p">,</span> <span class="s2">"pistol"</span><span class="p">,</span> <span class="s2">"tank"</span><span class="p">,</span> <span class="s2">"sand clock"</span><span class="p">,</span> <span class="s2">"trident"</span><span class="p">]</span>
 
 <span class="k">for</span> <span class="n">img</span> <span class="ow">in</span> <span class="n">images</span><span class="p">:</span>
-<span class="hll">    <span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+<span class="hll">    <span class="n">display</span><span class="o">.</span><span class="n">show_icon</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
 </span>    <span class="n">time</span><span class="o">.</span><span class="n">sleep_ms</span><span class="p">(</span><span class="mi">300</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <ol>
@@ -461,9 +471,9 @@
    “面具”、“头骨”、“机器人”、“剑”、“右箭头”、“箭头”、“福”、<br/>
    “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”</li>
 </ol>
-<h3 id="_4">自定义图案 （开发中……）<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
-<h4 id="displayshowimage">display.show(image)<a class="headerlink" href="#displayshowimage" title="Permanent link">⚓︎</a></h4>
-<p>展示自定义图案。<br/>
+<h3 id="_4">自定义图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h4 id="show_ledsimage">show_leds(image)<a class="headerlink" href="#show_ledsimage" title="Permanent link">⚓︎</a></h4>
+<p>显示自定义图案。<br/>
 <em>参数</em>：<code>image</code>，字符串。自定义图片的字符串。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">showDIYImage.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
@@ -474,10 +484,10 @@
 
 <span class="c1"># 参数：1点亮，0熄灭；字符串和点阵的对应关系，从上往下，从左往右。</span>
 <span class="hll"><span class="n">image1</span> <span class="o">=</span> <span class="s2">"1000100,0000000,0010000,0000000,1000100,0000001"</span>
-</span><span class="n">display</span><span class="o">.</span><span class="n">show</span><span class="p">(</span><span class="n">image1</span><span class="p">)</span>
+</span><span class="n">display</span><span class="o">.</span><span class="n">show_leds</span><span class="p">(</span><span class="n">image1</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="_5">滚动显示数据<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
-<h4 id="displayscrollvalue">display.scroll(value)<a class="headerlink" href="#displayscrollvalue" title="Permanent link">⚓︎</a></h4>
+<h4 id="scrollvalue">scroll(value)<a class="headerlink" href="#scrollvalue" title="Permanent link">⚓︎</a></h4>
 <p>滚动显示指定内容。<br/>
 <em>参数</em>：<code>value</code>，字符串/整数/浮点数/布尔值。要显示的内容。<br/>
 <em>返回值</em>：无。<br/></p>
@@ -500,12 +510,27 @@
 
 <span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">set_brightness</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
+<h3 id="_7">熄灭屏幕<a class="headerlink" href="#_7" title="Permanent link">⚓︎</a></h3>
+<h4 id="clear">clear()<a class="headerlink" href="#clear" title="Permanent link">⚓︎</a></h4>
+<p>熄灭屏幕。<br/>
+<em>参数</em>：无。<br/>
+<em>返回值</em>：无。<br/></p>
+<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">clear.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span>
+<span class="normal">5</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">display</span>
+
+<span class="n">value</span> <span class="o">=</span> <span class="s2">"I will disappear later."</span>
+<span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+<span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
+</span></code></pre></div></td></tr></table></div>
 <hr/>
 <div class="md-source-file">
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 23, 2022 13:04:23</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 28, 2022 18:22:26</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
