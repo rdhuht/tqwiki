@@ -2,16 +2,16 @@
 
 ## 简介
 
-控制主板的点阵屏。它可以用来展示字符串、图像甚至是动画。
+控制主板的点阵屏。它可以用来显示字符串、图像甚至是动画。
 
 ## 函数
 
-### 内置图案 （开发中……）
+### 内置图案
 
-#### display.show(name)
+#### show_icon(name)
 
-展示内置图案。<br>
-*参数*：`name`，字符串<br>
+显示内置图案。<br>
+*参数*：`name`，字符串。<br>
 *返回值*：无。<br>
 
 ```py title="showImage.py" linenums="1" hl_lines="15"
@@ -29,7 +29,7 @@ images = [
     "house", "ok", "pistol", "tank", "sand clock", "trident"]
 
 for img in images:
-    display.show(img)
+    display.show_icon(img)
     time.sleep_ms(300)
 ```
 
@@ -42,10 +42,10 @@ for img in images:
    “面具”、“头骨”、“机器人”、“剑”、“右箭头”、“箭头”、“福”、<br>
    “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”
 
-### 自定义图案 （开发中……）
-#### display.show(image)
+### 自定义图案
+#### show_leds(image)
 
-展示自定义图案。<br>
+显示自定义图案。<br>
 *参数*：`image`，字符串。自定义图片的字符串。<br>
 *返回值*：无。<br>
 
@@ -54,12 +54,12 @@ from tqm import display
 
 # 参数：1点亮，0熄灭；字符串和点阵的对应关系，从上往下，从左往右。
 image1 = "1000100,0000000,0010000,0000000,1000100,0000001"
-display.show(image1)
+display.show_leds(image1)
 ```
 
 ### 滚动显示数据
 
-#### display.scroll(value)
+#### scroll(value)
 
 滚动显示指定内容。<br>
 *参数*：`value`，字符串/整数/浮点数/布尔值。要显示的内容。<br>
@@ -84,4 +84,20 @@ display.scroll(value)
 from tqm import display
 
 display.set_brightness(10)
+```
+
+### 熄灭屏幕
+
+#### clear()
+
+熄灭屏幕。<br>
+*参数*：无。<br>
+*返回值*：无。<br>
+
+```py title="clear.py" linenums="1" hl_lines="5"
+from tqm import display
+
+value = "I will disappear later."
+display.scroll(value)
+display.clear()
 ```
