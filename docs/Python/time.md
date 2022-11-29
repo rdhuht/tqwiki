@@ -11,7 +11,7 @@
 
 延迟几秒钟。<br>
 *参数*：<br>
-`s` 整数，延迟的秒数，second(s)秒。<br>
+`s` 整数。延迟的秒数，second(s)秒。<br>
 *返回值*：无。
 
 ```py title="delays.py" linenums="1" hl_lines="2"
@@ -23,7 +23,7 @@ import time
 
 延迟给定的毫秒数。<br>
 *参数*：<br>
-`ms` 整数，延迟的毫秒数，million second(s)毫秒。<br>
+`ms` 整数。延迟的毫秒数，million second(s)毫秒。<br>
 
 *返回值*：无。
 
