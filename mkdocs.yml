@@ -158,7 +158,7 @@ nav:
       - 人体红外传感器: Python/tq_e1/PIR.md
       # - 土壤传感器: Python/tq_e1/soilHumidity.md
       # - 颜色传感器: Python/tq_e1/colorSensor.md
-      # - 声音传感器: Python/tq_e1/voice.md
+      - 声音传感器: Python/tq_e1/voice.md
       - 光线传感器: Python/tq_e1/light.md
       - 旋钮传感器: Python/tq_e1/rotarySwitch.md
       - 超声波传感器: Python/tq_e1/ultrasonic.md
