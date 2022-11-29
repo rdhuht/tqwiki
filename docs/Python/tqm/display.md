@@ -11,7 +11,7 @@
 #### show_icon(name)
 
 显示内置图案。<br>
-*参数*：`name`，字符串。<br>
+*参数*：`name` 字符串。内置图案的名称（内置图案的名称在下列代码中）。<br>
 *返回值*：无。<br>
 
 ```py title="showImage.py" linenums="1" hl_lines="15"
@@ -46,7 +46,7 @@ for img in images:
 #### show_leds(image)
 
 显示自定义图案。<br>
-*参数*：`image`，字符串。自定义图片的字符串。<br>
+*参数*：`image` 字符串。自定义图片的名称。<br>
 *返回值*：无。<br>
 
 ```py title="showDIYImage.py" linenums="1" hl_lines="4"
@@ -61,8 +61,8 @@ display.show_leds(image1)
 
 #### scroll(value)
 
-滚动显示指定内容。<br>
-*参数*：`value`，字符串/整数/浮点数/布尔值。要显示的内容。<br>
+滚动显示指定的内容。<br>
+*参数*：`value` 字符串/整数/浮点数/布尔值。要显示的内容。<br>
 *返回值*：无。<br>
 
 ```py title="scroll.py" linenums="1" hl_lines="4"
@@ -72,12 +72,12 @@ value = "hello world！"
 display.scroll(value)
 ```
 
-### 调整亮度
+### 调整亮度（开发中……）
 
 #### set_brightness(number)
 
 设置点阵屏亮度。<br>
-*参数*：`number`，整数。亮度范围0~10，默认值5。<br>
+*参数*：`number` 整数。亮度范围0~10，默认值5。<br>
 *返回值*：无。<br>
 
 ```py title="setBrightness.py" linenums="1" hl_lines="3"
