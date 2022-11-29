@@ -94,7 +94,7 @@
 <ul class="md-tabs__list">
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../..">
-        首页
+        介绍
       </a>
 </li>
 <li class="md-tabs__item">
@@ -141,13 +141,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_1" id="__nav_1" type="checkbox"/>
 <label class="md-nav__link" for="__nav_1">
-          首页
+          介绍
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="首页" class="md-nav" data-md-level="1">
+<nav aria-label="介绍" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_1">
 <span class="md-nav__icon md-icon"></span>
-          首页
+          介绍
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item">
@@ -238,7 +238,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
-    调整亮度
+    调整亮度（开发中……）
   </a>
 </li>
 <li class="md-nav__item">
@@ -402,7 +402,7 @@
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_6">
-    调整亮度
+    调整亮度（开发中……）
   </a>
 </li>
 <li class="md-nav__item">
@@ -427,7 +427,7 @@
 <h3 id="_3">内置图案<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
 <h4 id="show_iconname">show_icon(name)<a class="headerlink" href="#show_iconname" title="Permanent link">⚓︎</a></h4>
 <p>显示内置图案。<br/>
-<em>参数</em>：<code>name</code>，字符串。<br/>
+<em>参数</em>：<code>name</code> 字符串。内置图案的名称（内置图案的名称在下列代码中）。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">showImage.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -474,7 +474,7 @@
 <h3 id="_4">自定义图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
 <h4 id="show_ledsimage">show_leds(image)<a class="headerlink" href="#show_ledsimage" title="Permanent link">⚓︎</a></h4>
 <p>显示自定义图案。<br/>
-<em>参数</em>：<code>image</code>，字符串。自定义图片的字符串。<br/>
+<em>参数</em>：<code>image</code> 字符串。自定义图片的名称。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">showDIYImage.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -488,8 +488,8 @@
 </code></pre></div></td></tr></table></div>
 <h3 id="_5">滚动显示数据<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
 <h4 id="scrollvalue">scroll(value)<a class="headerlink" href="#scrollvalue" title="Permanent link">⚓︎</a></h4>
-<p>滚动显示指定内容。<br/>
-<em>参数</em>：<code>value</code>，字符串/整数/浮点数/布尔值。要显示的内容。<br/>
+<p>滚动显示指定的内容。<br/>
+<em>参数</em>：<code>value</code> 字符串/整数/浮点数/布尔值。要显示的内容。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">scroll.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -499,10 +499,10 @@
 <span class="n">value</span> <span class="o">=</span> <span class="s2">"hello world！"</span>
 <span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
 </span></code></pre></div></td></tr></table></div>
-<h3 id="_6">调整亮度<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
+<h3 id="_6">调整亮度（开发中……）<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
 <h4 id="set_brightnessnumber">set_brightness(number)<a class="headerlink" href="#set_brightnessnumber" title="Permanent link">⚓︎</a></h4>
 <p>设置点阵屏亮度。<br/>
-<em>参数</em>：<code>number</code>，整数。亮度范围0~10，默认值5。<br/>
+<em>参数</em>：<code>number</code> 整数。亮度范围0~10，默认值5。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">setBrightness.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
 <span class="normal">2</span>
@@ -530,7 +530,7 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 28, 2022 18:22:26</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 29, 2022 17:16:30</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
