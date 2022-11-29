@@ -170,7 +170,7 @@ nav:
       # - 灯串: Python/tq_e1/lightStrip.md
       - 全彩灯: Python/tq_e1/RGB.md
       # - 四位数码管: Python/tq_e1/digitalTube.md
-      # - 风扇: Python/tq_e1/fan.md
+      - 风扇: Python/tq_e1/fan.md
       # - 舵机: Python/tq_e1/servo.md
       # - 水泵: Python/tq_e1/waterPump.md
       # - TT马达: Python/tq_e1/motor.md
