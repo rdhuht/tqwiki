@@ -125,7 +125,7 @@ extra:
 #   - stylesheets/extra.css
 
 nav:
-  - 首页: 
+  - 介绍: 
     - index.md
 
   - 通用:
@@ -133,7 +133,7 @@ nav:
     - 时间: Python/time.md
     # - 数学: Python/math.md
 
-  - 主板:
+  - 主板: 
     - 点阵屏: Python/tqm/display.md
     - 加速度: Python/tqm/accelerometer.md
     - 计时器: Python/tqm/timer.md
