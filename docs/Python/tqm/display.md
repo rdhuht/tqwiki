@@ -101,3 +101,31 @@ value = "I will disappear later."
 display.scroll(value)
 display.clear()
 ```
+
+### 柱状图
+#### bar_graph()
+
+绘制条形图（分子除以分母，得到的数值在0~1之间时，会在主板的点阵屏上绘制柱状图，数值越接近1，屏幕电亮的灯越多，比如分子是5，分母是10，5/10=0.5，点阵屏会点亮一半）。<br>
+
+<figure markdown>
+  ![柱状图](../../../img/柱状图举例.png){ width="400"}
+  <figcaption>柱状图</figcaption>
+</figure>
+
+*参数*：<br>
+`value` 整数。分子。<br>
+`high` 整数。分母。<br>
+*返回值*：无。<br>
+
+```py title="display_bar_graph.py" linenums="1" hl_lines="7"
+from tqm import display
+
+i = 0
+while True:
+  time.sleep_ms(50)
+  i = i + 1
+  display.bar_graph(i, 100)
+  serial.write_num(i)
+  if i > 100:
+    i = 0
+```
