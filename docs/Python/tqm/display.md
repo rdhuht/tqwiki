@@ -129,3 +129,30 @@ while True:
   if i > 100:
     i = 0
 ```
+
+### 点亮/熄灭坐标点（开发中……）
+#### set_pixel()
+
+点亮/熄灭坐标点。<br>
+
+*参数*：<br>
+`x` 整数。横坐标0~6。<br>
+`y` 整数。纵坐标0~5。<br>
+`value` 整数。默认1，1是点亮，0是熄灭。<br>
+*返回值*：无。<br>
+
+```py title="display_pixels.py" linenums="1" hl_lines="9 12"
+from tqm import display
+
+x = 0
+y = 0
+while True:
+  x = math.random(0, 6)
+  y = math.random(0, 5)
+  
+  display.set_pixel(x, y, 1)
+  time.sleep_ms(300)
+  
+  display.set_pixel(x, y, 0)
+  time.sleep_ms(300)
+```
