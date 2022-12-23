@@ -109,7 +109,7 @@
 </li>
 <li class="md-tabs__item">
 <a class="md-tabs__link" href="../../tq_e1/PIR/">
-        转接板
+        转接板E1
       </a>
 </li>
 </ul>
@@ -223,17 +223,17 @@
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
-    内置图案
+    滚动显示数据
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    自定义图案
+    内置图案
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
-    滚动显示数据
+    自定义图案
   </a>
 </li>
 <li class="md-nav__item">
@@ -293,13 +293,13 @@
 <li class="md-nav__item md-nav__item--nested">
 <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_4" id="__nav_4" type="checkbox"/>
 <label class="md-nav__link" for="__nav_4">
-          转接板
+          转接板E1
           <span class="md-nav__icon md-icon"></span>
 </label>
-<nav aria-label="转接板" class="md-nav" data-md-level="1">
+<nav aria-label="转接板E1" class="md-nav" data-md-level="1">
 <label class="md-nav__title" for="__nav_4">
 <span class="md-nav__icon md-icon"></span>
-          转接板
+          转接板E1
         </label>
 <ul class="md-nav__list" data-md-scrollfix="">
 <li class="md-nav__item md-nav__item--nested">
@@ -407,17 +407,17 @@
 <ul class="md-nav__list">
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_3">
-    内置图案
+    滚动显示数据
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_4">
-    自定义图案
+    内置图案
   </a>
 </li>
 <li class="md-nav__item">
 <a class="md-nav__link" href="#_5">
-    滚动显示数据
+    自定义图案
   </a>
 </li>
 <li class="md-nav__item">
@@ -454,7 +454,20 @@
 <h2 id="_1">简介<a class="headerlink" href="#_1" title="Permanent link">⚓︎</a></h2>
 <p>控制主板的点阵屏。它可以用来显示字符串、图像甚至是动画。</p>
 <h2 id="_2">函数<a class="headerlink" href="#_2" title="Permanent link">⚓︎</a></h2>
-<h3 id="_3">内置图案<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h3 id="_3">滚动显示数据<a class="headerlink" href="#_3" title="Permanent link">⚓︎</a></h3>
+<h4 id="scrollvalue">scroll(value)<a class="headerlink" href="#scrollvalue" title="Permanent link">⚓︎</a></h4>
+<p>滚动显示指定的内容。<br/>
+<em>参数</em>：<code>value</code> 字符串/整数/浮点数/布尔值。要显示的内容。<br/>
+<em>返回值</em>：无。<br/></p>
+<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">scroll.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
+<span class="normal">2</span>
+<span class="normal">3</span>
+<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">display</span>
+
+<span class="n">value</span> <span class="o">=</span> <span class="s2">"hello world!"</span>
+<span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
+</span></code></pre></div></td></tr></table></div>
+<h3 id="_4">内置图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
 <h4 id="show_iconname">show_icon(name)<a class="headerlink" href="#show_iconname" title="Permanent link">⚓︎</a></h4>
 <p>显示内置图案。<br/>
 <em>参数</em>：<code>name</code> 字符串。内置图案的名称（内置图案的名称在下列代码中）。<br/>
@@ -501,7 +514,7 @@
    “面具”、“头骨”、“机器人”、“剑”、“右箭头”、“箭头”、“福”、<br/>
    “房子”、“ok”、“手枪”、“坦克”、“沙漏”、“三叉戟”</li>
 </ol>
-<h3 id="_4">自定义图案<a class="headerlink" href="#_4" title="Permanent link">⚓︎</a></h3>
+<h3 id="_5">自定义图案<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
 <h4 id="show_ledsimage">show_leds(image)<a class="headerlink" href="#show_ledsimage" title="Permanent link">⚓︎</a></h4>
 <p>显示自定义图案。<br/>
 <em>参数</em>：<code>image</code> 字符串。自定义图片的名称。<br/>
@@ -516,19 +529,6 @@
 <span class="hll"><span class="n">image1</span> <span class="o">=</span> <span class="s2">"1000100,0000000,0010000,0000000,1000100,0000001"</span>
 </span><span class="n">display</span><span class="o">.</span><span class="n">show_leds</span><span class="p">(</span><span class="n">image1</span><span class="p">)</span>
 </code></pre></div></td></tr></table></div>
-<h3 id="_5">滚动显示数据<a class="headerlink" href="#_5" title="Permanent link">⚓︎</a></h3>
-<h4 id="scrollvalue">scroll(value)<a class="headerlink" href="#scrollvalue" title="Permanent link">⚓︎</a></h4>
-<p>滚动显示指定的内容。<br/>
-<em>参数</em>：<code>value</code> 字符串/整数/浮点数/布尔值。要显示的内容。<br/>
-<em>返回值</em>：无。<br/></p>
-<div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">scroll.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal">1</span>
-<span class="normal">2</span>
-<span class="normal">3</span>
-<span class="normal">4</span></pre></div></td><td class="code"><div><pre><span></span><code><span class="kn">from</span> <span class="nn">tqm</span> <span class="kn">import</span> <span class="n">display</span>
-
-<span class="n">value</span> <span class="o">=</span> <span class="s2">"hello world！"</span>
-<span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">scroll</span><span class="p">(</span><span class="n">value</span><span class="p">)</span>
-</span></code></pre></div></td></tr></table></div>
 <h3 id="_6">调整亮度（开发中……）<a class="headerlink" href="#_6" title="Permanent link">⚓︎</a></h3>
 <h4 id="set_brightnessnumber">set_brightness(number)<a class="headerlink" href="#set_brightnessnumber" title="Permanent link">⚓︎</a></h4>
 <p>设置点阵屏亮度。<br/>
@@ -556,7 +556,7 @@
 <span class="hll"><span class="n">display</span><span class="o">.</span><span class="n">clear</span><span class="p">()</span>
 </span></code></pre></div></td></tr></table></div>
 <h3 id="_8">柱状图<a class="headerlink" href="#_8" title="Permanent link">⚓︎</a></h3>
-<h4 id="bar_graph">bar_graph()<a class="headerlink" href="#bar_graph" title="Permanent link">⚓︎</a></h4>
+<h4 id="bar_graphvalue-total">bar_graph(value, total)<a class="headerlink" href="#bar_graphvalue-total" title="Permanent link">⚓︎</a></h4>
 <p>绘制条形图（分子除以分母，得到的数值在0~1之间时，会在主板的点阵屏上绘制柱状图，数值越接近1，屏幕电亮的灯越多，比如分子是5，分母是10，5/10=0.5，点阵屏会点亮一半）。<br/></p>
 <figure>
 <p><a class="glightbox" data-desc-position="bottom" data-height="auto" data-width="100%" href="../../../img/柱状图举例.png"><img alt="柱状图" src="../../../img/柱状图举例.png" width="400"/></a>
@@ -564,8 +564,8 @@
 <figcaption>柱状图</figcaption>
 </figure>
 <p><em>参数</em>：<br/>
-<code>value</code> 整数。分子。<br/>
-<code>high</code> 整数。分母。<br/>
+<code>value</code> 整数。数值。<br/>
+<code>total</code> 整数。总值。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">display_bar_graph.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -588,12 +588,12 @@
     <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span>
 </code></pre></div></td></tr></table></div>
 <h3 id="_9">点亮/熄灭坐标点（开发中……）<a class="headerlink" href="#_9" title="Permanent link">⚓︎</a></h3>
-<h4 id="set_pixel">set_pixel()<a class="headerlink" href="#set_pixel" title="Permanent link">⚓︎</a></h4>
+<h4 id="set_pixelx-y-switch">set_pixel(x, y, switch)<a class="headerlink" href="#set_pixelx-y-switch" title="Permanent link">⚓︎</a></h4>
 <p>点亮/熄灭坐标点。<br/></p>
 <p><em>参数</em>：<br/>
 <code>x</code> 整数。横坐标0~6。<br/>
 <code>y</code> 整数。纵坐标0~5。<br/>
-<code>value</code> 整数。默认1，1是点亮，0是熄灭。<br/>
+<code>switch</code> 整数。默认1，1是点亮，0是熄灭。<br/>
 <em>返回值</em>：无。<br/></p>
 <div class="highlight"><table class="highlighttable"><tr><th class="filename" colspan="2"><span class="filename">display_pixels.py</span></th></tr><tr><td class="linenos"><div class="linenodiv"><pre><span></span><span class="normal"> 1</span>
 <span class="normal"> 2</span>
@@ -626,7 +626,7 @@
 <small>
     
       最后更新:
-      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 22, 2022 12:37:47</span>
+      <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">December 23, 2022 13:17:46</span>
 <br/>
         创建日期:
         <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-datetime">November 11, 2022 13:04:16</span>
