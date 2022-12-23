@@ -149,7 +149,7 @@ nav:
     # - 触摸传感器: Python/tq_s1/touch.md
     # - 声音传感器: Python/tq_s1/voice.md
 
-  - 转接板:
+  - 转接板E1:
     - 传感器: 
       # - 按钮: Python/tq_e1/button.md
       # - 触摸传感器: Python/tq_e1/touch.md
