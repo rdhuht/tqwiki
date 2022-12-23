@@ -10,16 +10,25 @@
 
 #### get_state()
 
-获取姿态。
-参数：无。
-返回值：String 字符串。姿态的名称。<br>
+获取姿态。<br>
+*参数*：无。<br>
+*返回值*：`state_name` 字符串。姿态的名称。<br>
 
-姿态有以下可能性“shake”"up""down""left""right""face up""face down"。
+姿态有以下可能性：
 
-```py
+| 返回值  | 说明  |
+|:----:|:----:|
+| `shake` | 摇晃 |
+| `up` | 标志朝上  |
+| `down` | 标志朝下  |
+| `left` | 向左倾斜 |
+| `right` | 向右倾斜 |
+| `face up` | 屏幕朝上  |
+| `face down` | 屏幕朝下  |
+
+```py title="acc_state.py" linenums="1" hl_lines="6"
 from tqm import accelerometer
 import time, serial
-
 
 while True:
     time.sleep_ms(200)
@@ -36,14 +45,16 @@ while True:
 
 #### get_z()
 
-读取三轴的强度。
-参数：无
-返回值：int 整数。x/y/z方向上的三轴加速度的强度数值。
+读取三轴的加速度数值。<br>
+*参数*：无<br>
+*返回值*：<br>
+`value` 整数。x/y/z方向上的三轴加速度的强度数值。<br>
+单位：million-g。 <br>
+范围：+/- 2000mg(开发板向右倾斜、标志朝上和屏幕朝上时value数值是正数；相反的是负数)。<br>
 
-```py
+```py title="acc_value.py" linenums="1" hl_lines="6"
 from tqm import accelerometer
 import time, serial
-
 
 while True:
     time.sleep_ms(200)
