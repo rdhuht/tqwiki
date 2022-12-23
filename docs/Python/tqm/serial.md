@@ -26,18 +26,23 @@ serial.set_baud_rate(115200)  # 设置波特率(1)
 
 ### 串口写入
 
-#### serial.write(value)
+#### serial.write_str(text)
+#### serial.write_num(number)
+#### serial.write_bool(boolean)
 
-向串行端口写入一个数字。
+向串行端口写入一个字符串、数字、布尔值。
 
 *参数*：<br>
-`value` 整数/浮点数。要向串口写入的数值。
+`text`、`number`、`boolean`，字符串、数字、布尔值。要向串口写入的数据。
 
 *返回值*：无。
 
-```py title="writenum.py" linenums="1" hl_lines="3 4"
+```py title="write.py" linenums="1" hl_lines=" "
 from tqm import serial
 
+serial.write_str("I love China!")
 serial.write_num(123)
 serial.write_num(3.1415926)
+serial.write_bool(True)
+serial.write_bool(False)
 ```
