@@ -6,6 +6,22 @@
 
 ## 函数
 
+### 滚动显示数据
+
+#### scroll(value)
+
+滚动显示指定的内容。<br>
+*参数*：`value` 字符串/整数/浮点数/布尔值。要显示的内容。<br>
+*返回值*：无。<br>
+
+```py title="scroll.py" linenums="1" hl_lines="4"
+from tqm import display
+
+value = "hello world!"
+display.scroll(value)
+```
+
+
 ### 内置图案
 
 #### show_icon(name)
@@ -57,20 +73,6 @@ image1 = "1000100,0000000,0010000,0000000,1000100,0000001"
 display.show_leds(image1)
 ```
 
-### 滚动显示数据
-
-#### scroll(value)
-
-滚动显示指定的内容。<br>
-*参数*：`value` 字符串/整数/浮点数/布尔值。要显示的内容。<br>
-*返回值*：无。<br>
-
-```py title="scroll.py" linenums="1" hl_lines="4"
-from tqm import display
-
-value = "hello world！"
-display.scroll(value)
-```
 
 ### 调整亮度（开发中……）
 
@@ -103,7 +105,7 @@ display.clear()
 ```
 
 ### 柱状图
-#### bar_graph()
+#### bar_graph(value, total)
 
 绘制条形图（分子除以分母，得到的数值在0~1之间时，会在主板的点阵屏上绘制柱状图，数值越接近1，屏幕电亮的灯越多，比如分子是5，分母是10，5/10=0.5，点阵屏会点亮一半）。<br>
 
@@ -113,8 +115,8 @@ display.clear()
 </figure>
 
 *参数*：<br>
-`value` 整数。分子。<br>
-`high` 整数。分母。<br>
+`value` 整数。数值。<br>
+`total` 整数。总值。<br>
 *返回值*：无。<br>
 
 ```py title="display_bar_graph.py" linenums="1" hl_lines="7"
@@ -131,14 +133,14 @@ while True:
 ```
 
 ### 点亮/熄灭坐标点（开发中……）
-#### set_pixel()
+#### set_pixel(x, y, switch)
 
 点亮/熄灭坐标点。<br>
 
 *参数*：<br>
 `x` 整数。横坐标0~6。<br>
 `y` 整数。纵坐标0~5。<br>
-`value` 整数。默认1，1是点亮，0是熄灭。<br>
+`switch` 整数。默认1，1是点亮，0是熄灭。<br>
 *返回值*：无。<br>
 
 ```py title="display_pixels.py" linenums="1" hl_lines="9 12"
