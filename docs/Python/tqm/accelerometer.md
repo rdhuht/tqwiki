@@ -32,10 +32,11 @@
 | `face up` | 屏幕朝上  |
 | `face down` | 屏幕朝下  |
 
-```py title="acc_state.py" linenums="1" hl_lines="6"
+```py title="acc_state.py" linenums="1" hl_lines="7"
 from tqm import accelerometer
 import time, serial
 
+accelerometer.init()
 while True:
     time.sleep_ms(200)
     s = accelerometer.get_state()
@@ -58,10 +59,11 @@ while True:
 单位：million-g。 <br>
 范围：+/- 2000mg(开发板向右倾斜、标志朝上和屏幕朝上时value数值是正数；相反的是负数)。<br>
 
-```py title="acc_value.py" linenums="1" hl_lines="6"
+```py title="acc_value.py" linenums="1" hl_lines="7"
 from tqm import accelerometer
 import time, serial
 
+accelerometer.init()
 while True:
     time.sleep_ms(200)
     x = accelerometer.get_x()
