@@ -43,7 +43,7 @@
 `port` 整数。端口，扩展板端口1到5分别对应端口P1到P5。</br>
 
 *返回值*：<br>
-`state`，布尔值，状态。True检测到移动，False未检测到移动。
+`state`，布尔值。状态。True检测到移动，False未检测到移动。
 
 
 ```py title="PIR.py" linenums="1" hl_lines="3 9"
