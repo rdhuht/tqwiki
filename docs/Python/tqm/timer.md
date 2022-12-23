@@ -24,7 +24,7 @@
 
 *参数*：无。<br>
 
-*返回值*：second(s) 整数。运行时间多少秒，秒数值。<br>
+*返回值*：`second(s)` 整数。运行时间多少秒，秒数值。<br>
 
 ```py title="timer.py" linenums="1" hl_lines="5 7 9"
 from tqm import timer, serial
