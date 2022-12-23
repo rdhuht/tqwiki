@@ -33,7 +33,7 @@ wifi.connect(name, passoword)
 判断连接是否成功。
 
 *参数*：无。<br>
-*返回值*：`Bollean` 布尔值。True连接成功，False连接失败。
+*返回值*：`value` 布尔值。True连接成功，False连接失败。
 
 ```py
 from tqm import wifi
