@@ -14,9 +14,15 @@
 `s` 整数。延迟的秒数，second(s)秒。<br>
 *返回值*：无。
 
-```py title="delays.py" linenums="1" hl_lines="2"
-import tqm
+```py title="delays.py" linenums="1" hl_lines="5 7"
+from tqm import display
 import time
+
+while True:
+  time.sleep(1)
+  display.show_icon("heart")
+  time.sleep(1)
+  display.show_icon("hollow heart")
 ```
 
 #### time.sleep_ms(ms)
@@ -27,7 +33,13 @@ import time
 
 *返回值*：无。
 
-```py title="delayms.py" linenums="1" hl_lines="2"
-import tqm
+```py title="delayms.py" linenums="1" hl_lines="5 7"
+from tqm import display
 import time
+
+while True:
+  time.sleep_ms(500)
+  display.show_icon("heart")
+  time.sleep_ms(500)
+  display.show_icon("hollow heart")
 ```
