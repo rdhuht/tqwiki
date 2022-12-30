@@ -37,7 +37,7 @@ serial.set_baud_rate(115200)  # 设置波特率(1)
 
 *返回值*：无。
 
-```py title="write.py" linenums="1" hl_lines=" "
+```py title="write.py" linenums="1" hl_lines="3"
 from tqm import serial
 
 serial.write_str("I love China!")
