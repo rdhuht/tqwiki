@@ -1,4 +1,4 @@
-# 按钮 button （开发中……）
+# 按钮 button
 
 ## 简介
 
@@ -31,9 +31,9 @@
 *返回值*：<br>
 `value` 布尔值。True按下，False未按下。
 
-```py title="pressButton&release.py" linenums="1" hl_lines="5 8"
+```py title="pressButton&release.py" linenums="1" hl_lines="1 5 8"
 from tqe1 import button
-from tqm import *
+from tqm import display
 
 while True:
   if button.is_pressed(3):
