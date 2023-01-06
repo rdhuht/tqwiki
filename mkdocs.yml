@@ -151,7 +151,7 @@ nav:
 
   - 转接板E1:
     - 传感器: 
-      # - 按钮: Python/tq_e1/button.md
+      - 按钮: Python/tq_e1/button.md
       # - 触摸传感器: Python/tq_e1/touch.md
       # - 火焰传感器: Python/tq_e1/flameSensor.md
       # - 磁敏传感器: Python/tq_e1/magnetometer.md
