@@ -137,9 +137,9 @@ nav:
     - 点阵屏: Python/tqm/display.md
     - 加速度: Python/tqm/accelerometer.md
     - 计时器: Python/tqm/timer.md
-    - 无线局域网: Python/tqm/wlan.md
-    - 无线网络接入点: Python/tqm/AP.md
-    - 物联网: Python/tqm/mqtt.md
+    # - 无线局域网: Python/tqm/AP.md
+    - 无线网络接入点: Python/tqm/wlan.md
+    # - 物联网: Python/tqm/mqtt.md
   # - 集成功能板:
     # - 蜂鸣器: Python/tq_s1/buzzer.md
     # - 温湿度传感器: Python/tq_s1/DHT.md
